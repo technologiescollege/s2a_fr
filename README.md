@@ -35,13 +35,14 @@ Version 1.4 Mar 23, 2014
 New Feature for 1.4
 Chinese translation of Block Text provided through the generosity of Professor YuFangjun
 French translation of Block Text provided through the generosity of Professor Sebastien Canet
-.
+
 Version 1.3 Feb 23, 2014
 ------------------------
 New Features for 1.3
 1. Support for the upcoming Snap!Mobile Physical Computing Project in "Instructables"
 2. Spanish Translation of Block Text and a Spanish Tutorial provided courtesy of Professor
 José Manuel Ruiz
+
 Version 1.2 Jan 1, 2014
 -----------------------
 New Features for 1.2:
@@ -50,25 +51,16 @@ New Features for 1.2:
 (This requires using PyMata version 1.54 or greater and the FirmataPlus Arduino sketch supplied with PyMata 1.54).
 3. Dutch translation for the Scratch/Snap! Block Text included (Thanks to Sjoerd Dirk Meijer).
 4. Provision to translate Scratch/Snap! Block Text to any language.
+
 Version 1.1 December 19, 2013
 -----------------------------
 New Features for 1.1:
 1. When enabling a digital pin, the pin capabilty is verified for the requested mode.
 2. A new Scratch debugger command block has been added to help debug Scratch scripts.
-Known Snap! 4.0 Extension Issues
-----------------------
-None.
-Known Scratch 2.0 Extension Issues
-------------
-All previous major issues have been resolved as of version 404 of the Off-Line editor.
-None.
+
 Scratch s2a_fm Extension Blocks
 -------------------------------
-![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_blocks.png)
+![ScreenShot](https://raw.github.com/technologiescollege/s2a_fr/documentation/scratch_blocks.png)
 Snap! s2a_fm Extension Blocks
 -----------------------------
-![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/snap_blocks.png)
-Wiring Diagrams for Examples
-----------------------------
-![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/LED_EXAMPLE.png)
-![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/pot1.png)
+![ScreenShot](https://raw.github.com/technologiescollege/s2a_fr/documentation/snap_blocks.png)
