@@ -60,7 +60,7 @@ New Features for 1.1:
 
 Scratch s2a_fm Extension Blocks
 -------------------------------
-![ScreenShot](https://raw.github.com/technologiescollege/s2a_fr/documentation/scratch_blocks.png)
+![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/scratch_blocks.png)
 Snap! s2a_fm Extension Blocks
 -----------------------------
-![ScreenShot](https://raw.github.com/technologiescollege/s2a_fr/documentation/snap_blocks.png)
+![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/snap_blocks.png)
