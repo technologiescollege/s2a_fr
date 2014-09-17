@@ -10,7 +10,6 @@ https://github.com/MrYsLab/xi
 =======
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 
-![](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_langs.png)
 Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol.
 
 **Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino code et avoir en même temps l'accès à une interface utilisateur graphique ?
