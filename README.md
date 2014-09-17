@@ -11,24 +11,22 @@ https://github.com/MrYsLab/xi
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 
 ![](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_langs.png)
+Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol.
 
-Utilisateurs d’Arduino ! Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino code et avoir en même temps l'accès à une interface utilisateur graphique ?
-Scratch  et Snap! Utilisateurs !  Would you like to control and communicate with an Arduino board?  Imagine, using Scratch or Snap! to control physical devices such as LEDs, motors, and relays while monitoring  devices, such as temperature sensors, potentiometers, and light sensors. What would you create?
+**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino code et avoir en même temps l'accès à une interface utilisateur graphique ?
 
-Voudriez-vous contrôler et communiquer avec une carte d'Arduino ? Imaginez-vous, en utilisant  Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
-Ne cherchez plus, s2a est là !
+**Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte d'Arduino ? Imaginez-vous, en utilisant  Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
+
+**Ne cherchez plus, s2a est là !**
 
 Want to do motor control using Snap! and Wifi? Check out our article on Physical Computing.
 http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/
 
 All the code is included here!
 
-s2a_fm is a Scratch/Snap! hardware extension written in Python allowing Scratch or Snap! and an Arduino
-micro-controller to communicate seamlessly.
+s2a_fm is a Scratch/Snap! hardware extension written in Python allowing Scratch or Snap! and an Arduino micro-controller to communicate seamlessly.
 
-Program Block translations are included for Chinese, Dutch, English (default), French, German, Korean, Portuguese, and Spanish.
-
-Make sure you get the latest version of the Scratch Off-Line editor if you are using Scratch (version 404 or greater).
+Cette version fonctionne aussi bien avec la version en ligne que hors-ligne. Toutefois veuillez à vérifier que vous avez une version récente (404 ou supérieure).
 
 Installation Instructions
 --------------------------
