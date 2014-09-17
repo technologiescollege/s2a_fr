@@ -1,6 +1,6 @@
 s2a_fr
 ======
-<<<<<<< HEAD
+
 Ce projet est un fork d'un projet stable : Mr Y's Lab s2a_fm 
 https://github.com/MrYsLab/s2a_fm
 
@@ -9,8 +9,8 @@ https://github.com/MrYsLab/xi
 
 =======
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
->>>>>>> origin/master
-![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_langs.png)
+
+![](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_langs.png)
 
 Utilisateurs d’Arduino ! Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino code et avoir en même temps l'accès à une interface utilisateur graphique ?
 Scratch  et Snap! Utilisateurs !  Would you like to control and communicate with an Arduino board?  Imagine, using Scratch or Snap! to control physical devices such as LEDs, motors, and relays while monitoring  devices, such as temperature sensors, potentiometers, and light sensors. What would you create?
@@ -29,10 +29,6 @@ micro-controller to communicate seamlessly.
 Program Block translations are included for Chinese, Dutch, English (default), French, German, Korean, Portuguese, and Spanish.
 
 Make sure you get the latest version of the Scratch Off-Line editor if you are using Scratch (version 404 or greater).
-
-Check Out Our Blog
-------------------
-http://mryslab.blogspot.com/
 
 Installation Instructions
 --------------------------
