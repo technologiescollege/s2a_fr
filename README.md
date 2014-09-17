@@ -1,16 +1,18 @@
-s2a_fm
+s2a_fr
 ======
+Ce projet est un fork d'un projet stable : Mr Y's Lab s2a_fm 
+https://github.com/MrYsLab/s2a_fm
+
+Ce projet a servi de base à son second projet plus évolué : Xi, une sorte de s2a_v2
+https://github.com/MrYsLab/xi
 
 ![ScreenShot](https://raw.github.com/MrYsLab/s2a_fm/master/documentation/scratch_langs.png)
 
-Arduino users! Would you like to configure and control your Arduino micro-controller without having
-to write a single line of Arduino sketch code and at the same time have access to a graphical user
-interface?
+Utilisateurs d’Arduino ! Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino code et avoir en même temps l'accès à une interface utilisateur graphique ?
+Scratch  et Snap! Utilisateurs !  Would you like to control and communicate with an Arduino board?  Imagine, using Scratch or Snap! to control physical devices such as LEDs, motors, and relays while monitoring  devices, such as temperature sensors, potentiometers, and light sensors. What would you create?
 
-Scratch and Snap! programmers! Would you like to control and communicate with an Arduino board using
-Scratch? Imagine, using Scratch to control physical devices such as LEDs, motors, and relays while
-monitoring devices, such as temperature sensors, potentiometers, and light sensors. What would you
-create?
+Voudriez-vous contrôler et communiquer avec une carte d'Arduino ? Imaginez-vous, en utilisant  Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
+Ne cherchez plus, s2a est là !
 
 Want to do motor control using Snap! and Wifi? Check out our article on Physical Computing.
 http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/
