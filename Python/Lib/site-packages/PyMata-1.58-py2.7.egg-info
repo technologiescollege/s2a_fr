@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: PyMata
+Version: 1.58
+Summary: A Python Protocol Abstraction Library For Arduino Firmata
+Home-page: https://github.com/MrYsLab/PyMata
+Author: Alan Yorinks
+Author-email: MisterYsLab@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/MrYsLab/PyMata
+Description: UNKNOWN
+Keywords: Firmata,Arduino,Protocol
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Home Automation
