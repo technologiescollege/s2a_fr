@@ -1,40 +1,40 @@
 {
-    "extensionName": "s2a_fm - Scratch f�r Arduino",
+    "extensionName": "Scratch pour Arduino",
     "extensionPort": 50209,
     "url": "https://github.com/MrYsLab/PyMata",
     "blockSpecs": [
         [
             " ",
-            "%m.pin_state DigitalPIN %n als %m.digital_pin_mode",
+            "%m.pin_state la broche Digital %n comme une %m.digital_pin_mode",
             "digital_pin_mode",
-            "Setze",
+            "activer",
             "PIN",
-            "Eingang"
+            "entree"
         ],
         [
             " ",
-            "%m.pin_state AnalogPIN (A) %n als Eingang",
+            "%m.pin_state la broche Analogique A%n comme une entrée",
             "analog_pin_mode",
-            "Setze",
+            "activer",
             "PIN"
         ],
         [
             "",
-            "Setze Digitalwert an PIN %n zu %m.high_low",
+            "mettre l'état logique de la broche Digital %n à %m.high_low",
             "digital_write",
             "PIN",
             0
         ],
         [
             "",
-            "Setze Analogwert (PWM) an PIN %n zu %n",
+            "écrire sur la broche PWM %n la valeur %n",
             "analog_write",
             "PIN",
             "VAL"
         ],
         [
             "",
-            "Erzeuge Ton an PIN: %n HZ: %n f�r MS: %n",
+            "jouer le son sur la broche %n , fréquence (Hz) : %n , durée (ms) : %n",
             "play_tone",
             "PIN",
             1000,
@@ -42,56 +42,56 @@
         ],
         [
             "",
-            "Schalte Ton an PIN %n aus",
+            "arrêter le son sur la broche : %n",
             "tone_off",
             "PIN"
         ],
         [
             "",
-            "Bewege Servo an PIN %n zu Position %n Grad",
+            "tourner le servo-moteur sur la broche %n de : %n degrés",
             "set_servo_position",
             "PIN",
             90
         ],
         [
             "r",
-            "Lese DigitalPIN %n",
+            "l'état logique de la broche Digital %n",
             "digital_read",
             "PIN"
         ],
         [
             "r",
-            "Lese AnalogPIN (A) %n",
+            "la valeur sur la broche Analogique A%n",
             "analog_read",
             "PIN"
         ],
         [
             "",
-            "Debuggen %m.off_on",
+            "debugger %m.off_on",
             "debugger",
-            "Nein"
+            "arret"
         ]
     ],
     "menus": {
         "pin_state": [
-            "Setze",
-            "Deaktiviere"
+            "activer",
+            "desactiver"
         ],
         "digital_pin_mode": [
-            "Eingang",
-            "Ausgang",
-            "PWM",
-            "Servo",
-            "Ton",
-            "Ultraschall"
+            "entree",
+            "sortie",
+            "impulsion PWM",
+            "rotation Servo-moteur",
+            "sortie Son",
+            "mesure Sonar"
         ],
         "high_low": [
             "0",
             "1"
         ],
         "off_on": [
-            "Nein",
-            "Ja"
+            "arret",
+            "marche"
         ]
     }
 }
