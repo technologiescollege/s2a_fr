@@ -27,7 +27,7 @@
         ],
         [
             "",
-            "écrire sur la broche PWM %n la valeur %n",
+            "écrire sur la broche PWM ~%n la valeur %n",
             "analog_write",
             "PIN",
             "VAL"
@@ -42,13 +42,13 @@
         ],
         [
             "",
-            "arrêter le son sur la broche : %n",
+            "arrêter le son sur la broche %n",
             "tone_off",
             "PIN"
         ],
         [
             "",
-            "tourner le servo-moteur sur la broche %n de : %n degrés",
+            "tourner le servo-moteur sur la broche %n de %n degrés",
             "set_servo_position",
             "PIN",
             90
@@ -61,7 +61,7 @@
         ],
         [
             "r",
-            "la valeur sur la broche Analogique A%n",
+            "la valeur lue sur la broche Analogique A%n",
             "analog_read",
             "PIN"
         ],
@@ -80,7 +80,7 @@
         "digital_pin_mode": [
             "entree",
             "sortie",
-            "impulsion PWM",
+            "impulsion PWM~",
             "rotation Servo-moteur",
             "sortie Son",
             "mesure Sonar"
