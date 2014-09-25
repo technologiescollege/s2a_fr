@@ -177,7 +177,7 @@ class ScratchCommandHandlers:
         """
         if not self.first_poll_received:
             logging.info('Scratch detected! Ready to rock and roll...')
-            print 'Scratch detected! Ready to rock and roll...'
+            print 'Scratch est detecte ! Rock and roll...'
             self.first_poll_received = True
 
         # assemble all output pin reports
@@ -259,7 +259,7 @@ class ScratchCommandHandlers:
         """
         if not command[self.CMD_PIN_ENABLE_DISABLE].isdigit():
             logging.debug('digital_pin_mode: The pin number must be set to a numerical value')
-            print 'digital_pin_mode: The pin number must be set to a numerical value'
+            print 'digital_pin_mode: Le numéro de pin doit etre une valeur numerique.'
             return 'okay'
 
         pin = int(command[self.CMD_PIN_ENABLE_DISABLE])
@@ -267,7 +267,7 @@ class ScratchCommandHandlers:
         # test for a valid pin number
         if pin >= self.total_pins_discovered:
             logging.debug('digital_pin_mode: pin %d exceeds number of pins on board' % pin)
-            print 'digital_pin_mode: pin %d exceeds number of pins on board' % pin
+            print 'digital_pin_mode: le numero de pin %d depasse le nombre de pins sur la carte' % pin
             return 'okay'
         # ok pin is range, but make
         else:

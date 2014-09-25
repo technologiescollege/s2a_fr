@@ -123,19 +123,19 @@ def start_server(firmata, command_handler):
     GetHandler.set_items(firmata, command_handler)
     try:
         server = HTTPServer(('localhost', 50209), GetHandler)
-        print 'Starting HTTP Server!'
-        print 'Use <Ctrl-C> to exit the extension\n'
-        print 'Please start Scratch or Snap!'
+        print 'Demarrage du serveur HTTP'
+        print 'Utiliser <Ctrl-C> pour quitter ce programme\n'
+        print 'Veuillez lancer Scratch ou Snap!'
     except Exception:
         logging.debug('Exception in scratch_http_server.py: HTTP Socket may already be in use - restart Scratch')
-        print 'HTTP Socket may already be in use - restart Scratch'
+        print 'HTTP Socket est peut etre deja utilise - redemarrez Scratch'
         raise
     try:
         #start the server
         server.serve_forever()
     except KeyboardInterrupt:
         logging.info('scratch_http_server.py: keyboard interrupt exception')
-        print "Goodbye !"
+        print "Au revoir !"
         raise KeyboardInterrupt
     except Exception:
         logging.debug('scratch_http_server.py: Exception %s' % str(Exception))

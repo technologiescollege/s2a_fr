@@ -5,5 +5,5 @@
 # and execute it by typing "./s2a_fm.sh"
 # Make sure that this file is executable as well as s2a_fm.py
 
-python s2a_fm.py /dev/ttyACM0
+python s2a.py /dev/ttyACM0
 
