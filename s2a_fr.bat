@@ -1,6 +1,6 @@
 @echo off
 break ON
-rem fcihiers BAT et fork créés par Sébastien CANET
+rem fichiers BAT et fork créés par Sébastien CANET
 cls
 echo.
 echo s2a : la communication Arduino+Scratch2 facile !

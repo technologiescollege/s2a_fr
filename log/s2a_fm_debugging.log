@@ -1,6 +1,0 @@
-INFO:root:s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved 
-INFO:root:com port = COM3
-INFO:root:20 Total Pins and 6 Analog Pins Found
-INFO:root:Scratch detected! Ready to rock and roll...
-DEBUG:root:digital_pin_mode: Unknown output mode impulsion%20PWM
-DEBUG:root:analog_write: Pin 3 must be enabled before writing to it.
