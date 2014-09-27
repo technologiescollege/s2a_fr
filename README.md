@@ -1,8 +1,6 @@
  s2a_fr
 ======
-Ce projet est un fork d'un projet stable : Mr Y's Lab s2a_fm (https://github.com/MrYsLab/s2a_fm)
-
-Ce projet a servi de base à son second projet plus évolué : Xi, une sorte de s2a_v2 (https://github.com/MrYsLab/xi)
+Ce projet est un fork d'un projet stable : Mr Y's Lab s2a_fm (https://github.com/MrYsLab/s2a_fm), qui la base pour son second projet plus évolué : Xi, une sorte de s2a_v2 (https://github.com/MrYsLab/xi)
 =======
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol.
