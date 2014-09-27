@@ -1,64 +1,41 @@
- s2a_fr
-======
-Ce projet est un fork d'un projet stable : Mr Y's Lab s2a_fm (https://github.com/MrYsLab/s2a_fm), qui la base pour son second projet plus évolué : Xi, une sorte de s2a_v2 (https://github.com/MrYsLab/xi)
-=======
+s2a
+====
+###Ce projet est un fork d'un projet stable : [Mr Y's Lab s2a_fm](https://github.com/MrYsLab/s2a_fm), ce qui lui a servi de base à son second projet plus évolué : [Xi, une sorte de s2a_v2](https://github.com/MrYsLab/xi).
+
+
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
-Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol.
+Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais cette version sera françisée à outrance et portabilisée pour être utilisée facilement**_.
 
-**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (sketch) Arduino et avoir en même temps l'accès à une interface graphique ? 
+_Lorsque Xi sera stabilisé, on y glissera surement..._
 
-**Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte d'Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
+**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et avoir en même temps l'accès à une interface graphique ? 
+
+**Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
 
 **Ne cherchez plus, s2a est là !**
 
-Want to do motor control using Snap! and Wifi? Check out our article on Physical Computing.
-http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/
-All the code is included here!
+_Si vous voulez plus de détails sur le contrôle de moteurs (robots) par WiFi, pour Scratch ou Snap!, consultez l'article de Alan Yorinks sur :
+http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/_
 
 Cette version fonctionne aussi bien avec la version en ligne que hors-ligne. Toutefois veuillez à vérifier que vous avez une version récente (404 ou supérieure).
 
-Installation Instructions
+Instructions
 --------------------------
-The s2a_fm Reference Manual, s2a_fm_reference.pdf, located in the documentation directory of this distribution,
-provides full installation instructions
-Version 1.5 Apr 12, 2014
+Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
+
+Version 1.6 de _s2afr_ du 25 septembre 2014
 ------------------------
-New Features for 1.5
-Korean translation provided through the generosity of Dr. Eungil Kim
-Portuguese and German translations of Block Text provided through the generosity of
-Aldo von Wangenheim, from www.computacaonaescola.ufsc.br
-A Chinese translation of the reference manual was graciously provided by Yufangjun 发自我的小米手机
-Version 1.4 Mar 23, 2014
------------------------
-New Feature for 1.4
-Chinese translation of Block Text provided through the generosity of Professor YuFangjun
-French translation of Block Text provided through the generosity of Professor Sebastien Canet
-
-Version 1.3 Feb 23, 2014
+Portabilisation et création de la branche Portable de ce projet.
+Fichier bat de lancement françisé.
+Version 1.5 du 12 avril 2014
 ------------------------
-New Features for 1.3
-1. Support for the upcoming Snap!Mobile Physical Computing Project in "Instructables"
-2. Spanish Translation of Block Text and a Spanish Tutorial provided courtesy of Professor
-José Manuel Ruiz
+Voir sur le site de s2a_fm. Il s'agit de la version stable et finale du projet sur laquelle s'appuie [s2a_fr](https://github.com/MrYsLab/s2a_fm).
 
-Version 1.2 Jan 1, 2014
------------------------
-New Features for 1.2:
-1. Support for Snap! 4.0 provided.
-2. Support for up to 4 simultaneous HC-SR04 type "Ping" Sensors.
-(This requires using PyMata version 1.54 or greater and the FirmataPlus Arduino sketch supplied with PyMata 1.54).
-3. Dutch translation for the Scratch/Snap! Block Text included (Thanks to Sjoerd Dirk Meijer).
-4. Provision to translate Scratch/Snap! Block Text to any language.
 
-Version 1.1 December 19, 2013
------------------------------
-New Features for 1.1:
-1. When enabling a digital pin, the pin capabilty is verified for the requested mode.
-2. A new Scratch debugger command block has been added to help debug Scratch scripts.
-
-Scratch s2a_fm Extension Blocks
+Scratch : blocs de l'extension s2a
 -------------------------------
 ![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/scratch_blocks.png)
-Snap! s2a_fm Extension Blocks
+
+Snap! : blocs de l'extension s2a
 -----------------------------
 ![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/snap_blocks.png)
