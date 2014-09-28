@@ -23,7 +23,11 @@ Instructions
 --------------------------
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
 
-Version 1.6 de _s2afr_ du 25 septembre 2014
+Version 1.7 de _s2a-fr_ du 28 septembre 2014
+------------------------
+Tout a été traduit, même les scripts Python. N'hésitez pas à me dire s'il reste des choses à traduire ou bien si cela a créé des erreurs.
+
+Version 1.6 de _s2a-fr_ du 25 septembre 2014
 ------------------------
 Portabilisation et création de la branche Portable de ce projet.
 Fichier bat de lancement françisé.
