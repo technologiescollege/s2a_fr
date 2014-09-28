@@ -54,8 +54,8 @@ def s2a_fm():
     # turn on logging
     logging.basicConfig(filename='./log/s2a_fm_debugging.log', filemode='w', level=logging.DEBUG)
     logging.info('s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved ')
-    print 's2a_fm version 1.5   Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved '
-    print 'Traduction francaise Sebastien Canet'
+    print 's2a_fm version 1.5   Copyright(C) 2013-14 Alan Yorinks    Tous droits reserves '
+    print 'Traduction francaise : Sebastien Canet'
 
     # get the com_port from the command line or default if none given
     # if user specified the com port on the command line, use that when invoking PyMata,
@@ -83,7 +83,7 @@ def s2a_fm():
     capability_map = firmata.get_analog_mapping_request_results()
 
     firmata.capability_query()
-    print "Merci de patienter pendant la detection du nombre de pins de votre carte Arduino. Cela peut prendre pres de 30s de plus."
+    print "Merci de patienter pendant la detection du nombre de pins de votre Arduino. Cela peut prendre pres de 30s de plus."
 
     # count the pins
     for pin in capability_map:
@@ -106,7 +106,7 @@ def s2a_fm():
     while not pin_capability:
         if time.time() - start_time > 30:
             print ''
-            print "Impossible de determiner le nombre de pins - sortie."
+            print "Impossible de determiner le nombre de pins - sortie du script."
             firmata.close()
             # keep sending out a capability query until there is a response
         pin_capability = firmata.get_capability_query_results()
@@ -125,7 +125,7 @@ def s2a_fm():
         else:
             pin_list.append(entry)
 
-    print "Detection des pins de la carte Arduino fait en %d secondes" % (int(time.time() - start_time))
+    print "Detection des pins de la carte Arduino faite en %d secondes" % (int(time.time() - start_time))
 
     try:
         # start the server passing it the handle to PyMata and the command handler.

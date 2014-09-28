@@ -259,7 +259,7 @@ class ScratchCommandHandlers:
         """
         if not command[self.CMD_PIN_ENABLE_DISABLE].isdigit():
             logging.debug('digital_pin_mode: The pin number must be set to a numerical value')
-            print 'digital_pin_mode: Le numéro de pin doit etre une valeur numerique.'
+            print 'digital_pin_mode: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN_ENABLE_DISABLE])
@@ -283,7 +283,7 @@ class ScratchCommandHandlers:
                         self.firmata.set_pin_mode(pin, self.firmata.INPUT, self.firmata.DIGITAL)
                     else:
                         logging.debug('digital_pin_mode: Pin %d does not support INPUT mode' % pin)
-                        print 'digital_pin_mode: Pin %d does not support INPUT mode ' % pin
+                        print 'digital_pin_mode: ce pin %d ne peut etre active comme une entree ' % pin
                         return 'okay'
                 elif self.check_CMD_DIGITAL_MODE(command[self.CMD_DIGITAL_MODE]) == 'SONAR':
                         # any digital input pin can be used for SONAR
@@ -292,7 +292,7 @@ class ScratchCommandHandlers:
                             self.firmata.sonar_config(pin, pin)
                         else:
                             logging.debug('digital_pin_mode: Pin %d does not support SONAR mode' % pin)
-                            print 'digital_pin_mode: Pin %d does not support SONAR mode' % pin
+                            print 'digital_pin_mode: ce pin %d ne peut etre active comme une mesure sonar' % pin
                             return 'okay'
                 else:
                     # an output mode, so just clear the poll bit
@@ -302,7 +302,7 @@ class ScratchCommandHandlers:
                             self.firmata.set_pin_mode(pin, self.firmata.OUTPUT, self.firmata.DIGITAL)
                         else:
                             logging.debug('digital_pin_mode: Pin %d does not support OUTPUT mode' % pin)
-                            print 'digital_pin_mode: Pin %d does not support OUTPUT mode' % pin
+                            print 'digital_pin_mode: ce pin %d ne peut etre active comme une sortie' % pin
                             return 'okay'
                     elif self.check_CMD_DIGITAL_MODE(command[self.CMD_DIGITAL_MODE]) == 'PWM':
                         if self.valid_digital_pin_mode_type(pin, self.firmata.PWM):
@@ -310,7 +310,7 @@ class ScratchCommandHandlers:
                             self.firmata.set_pin_mode(pin, self.firmata.PWM, self.firmata.DIGITAL)
                         else:
                             logging.debug('digital_pin_mode: Pin %d does not support PWM mode' % pin)
-                            print 'digital_pin_mode: Pin %d does not support PWM mode' % pin
+                            print 'digital_pin_mode: ce pin %d ne peut etre active comme une impulsion PWM' % pin
                             return 'okay'
                     elif self.check_CMD_DIGITAL_MODE(command[self.CMD_DIGITAL_MODE]) == 'Tone':
                         # Tone can be on any pin so we look for OUTPUT
@@ -319,7 +319,7 @@ class ScratchCommandHandlers:
                             self.firmata.set_pin_mode(pin, self.firmata.OUTPUT, self.firmata.DIGITAL)
                         else:
                             logging.debug('digital_pin_mode: Pin %d does not support TONE mode' % pin)
-                            print 'digital_pin_mode: Pin %d does not support TONE mode' % pin
+                            print 'digital_pin_mode: ce pin %d ne peut etre active comme une sortie Son' % pin
                             return 'okay'
                     elif self.check_CMD_DIGITAL_MODE(command[self.CMD_DIGITAL_MODE]) == 'Servo':
                         if self.valid_digital_pin_mode_type(pin, self.firmata.SERVO):
@@ -327,11 +327,11 @@ class ScratchCommandHandlers:
                             self.firmata.servo_config(pin)
                         else:
                             logging.debug('digital_pin_mode: Pin %d does not support SERVO mode' % pin)
-                            print 'digital_pin_mode: Pin %d does not support SERVO mode' % pin
+                            print 'digital_pin_mode: ce pin %d ne peut etre active comme une commande Servo-moteur' % pin
                             return 'okay'
                     else:
                         logging.debug('digital_pin_mode: Unknown output mode %s' % command[self.CMD_DIGITAL_MODE])
-                        print 'digital_pin_mode: Unknown output mode %s' % command[self.CMD_DIGITAL_MODE]
+                        print 'digital_pin_mode: Mode de sortie inconnu %s' % command[self.CMD_DIGITAL_MODE]
                         return 'okay'
             if self.check_CMD_ENABLE_DISABLE(command[self.CMD_ENABLE_DISABLE]) == 'Disable':
                 # disable pin of any type by setting it to IGNORE in the table
@@ -369,14 +369,14 @@ class ScratchCommandHandlers:
 
         if not command[self.CMD_PIN_ENABLE_DISABLE].isdigit():
             logging.debug('analog_pin_mode: The pin number must be set to a numerical value')
-            print 'analog_pin_mode: The pin number must be set to a numerical value'
+            print 'analog_pin_mode: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN_ENABLE_DISABLE])
         # Normally analog pins act as inputs only, but the DUE allow analog ins
         # test for a valid pin number
         if pin >= self.number_of_analog_pins_discovered:
-            print 'analog_pin_mode: pin %d exceeds number of analog pins on board' % pin
+            print 'analog_pin_mode: le pin %d depasse le nombre de pins analogiques disponibles sur la carte' % pin
             logging.debug('analog_pin_mode: pin %d exceeds number of analog pins on board' % pin)
             return 'okay'
         else:
@@ -411,7 +411,7 @@ class ScratchCommandHandlers:
 
         if not command[self.CMD_PIN].isdigit():
             logging.debug('digital_write: The pin number must be set to a numerical value')
-            print 'digital_write: The pin number must be set to a numerical value'
+            print 'digital_write: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN])
@@ -424,8 +424,8 @@ class ScratchCommandHandlers:
             self.firmata.digital_write(pin, int(command[self.CMD_VALUE]))
             return 'okay'
         else:
-            print 'digital write: Pin %d must be enabled before writing to it.' % pin
-            logging.debug('digital write: Pin %d must be enabled before writing to it.' % pin)
+            print 'digital write: le pin %d doit etre active avant de pouvoir y ecrire une valeur' % pin
+            logging.debug('digital write: le pin %d doit etre active avant de pouvoir y ecrire une valeur' % pin)
             return 'okay'
 
     def analog_write(self, command):
@@ -438,12 +438,12 @@ class ScratchCommandHandlers:
         """
         if command[self.CMD_VALUE] == 'VAL':
             logging.debug('analog_write: The value field must be set to a numerical value')
-            print 'analog_write: The value field must be set to a numerical value'
+            print 'analog_write: le champ doit etre rempli avec une valeur numerique'
             return 'okay'
 
         if not command[self.CMD_PIN].isdigit():
             logging.debug('analog_write: The pin number must be set to a numerical value')
-            print 'analog_write: The pin number must be set to a numerical value'
+            print 'analog_write: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN])
@@ -454,14 +454,14 @@ class ScratchCommandHandlers:
                 self.firmata.analog_write(pin, int(command[self.CMD_VALUE]))
                 return 'okay'
             else:
-                print 'analog_write data value %d is out of range. It should be between 0-255' % \
+                print 'analog_write de la valeur %d est en dehors des limites : elle doit etre comprise entre 0 et 255' % \
                       int(command[self.CMD_VALUE])
                 logging.debug('analog_write data value %d is out of range. It should be between 0-255' %
                               int(command[self.CMD_VALUE]))
                 return '_problem analog_write data value %d is out of range. It should be between 0-255' % \
                        int(command[self.CMD_VALUE])
         else:
-            print'analog_write: Pin %d must be enabled before writing to it.' % pin
+            print'analog_write: le pin %d doit etre active avant de pouvoir y ecrire une valeur' % pin
             logging.debug('analog_write: Pin %d must be enabled before writing to it.' % pin)
             return '_problem Pin must be enabled before writing to it.'
 
@@ -475,7 +475,7 @@ class ScratchCommandHandlers:
 
         if not command[self.CMD_PIN].isdigit():
             logging.debug('play_tome: The pin number must be set to a numerical value')
-            print 'play_tone: The pin number must be set to a numerical value'
+            print 'play_tone: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN])
@@ -487,7 +487,7 @@ class ScratchCommandHandlers:
                                    int(command[self.CMD_TONE_DURATION]))
             return 'okay'
         else:
-            print 'play_tone: Pin %d was not enabled as TONE.' % pin
+            print 'play_tone: le pin %d n a pas ete active comme une sortie son' % pin
             logging.debug('play_tone: Pin %d was not enabled as TONE.' % pin)
             return 'okay'
 
@@ -501,7 +501,7 @@ class ScratchCommandHandlers:
 
         if not command[self.CMD_PIN].isdigit():
             logging.debug('tone_off: The pin number must be set to a numerical value')
-            print 'tone_off: The pin number must be set to a numerical value'
+            print 'tone_off: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN])
@@ -512,7 +512,7 @@ class ScratchCommandHandlers:
             self.firmata.play_tone(pin, self.firmata.TONE_NO_TONE, 0, 0)  
             return 'okay'
         else:
-            print 'tone_off: Pin %d was not enabled as TONE.' % pin
+            print 'tone_off: le pin %d n a pas ete active comme une sortie son' % pin
             logging.debug('tone_off: Pin %d was not enabled as TONE.' % pin)
             return 'okay'
 
@@ -537,7 +537,7 @@ class ScratchCommandHandlers:
 
         if not command[self.CMD_PIN].isdigit():
             logging.debug('servo_position: The pin number must be set to a numerical value')
-            print 'servo_position: The pin number must be set to a numerical value'
+            print 'servo_position: le numero de pin doit etre declare en utilisant une valeur numerique'
             return 'okay'
 
         pin = int(command[self.CMD_PIN])
@@ -547,13 +547,13 @@ class ScratchCommandHandlers:
                 self.firmata.analog_write(pin,  int(command[self.CMD_SERVO_DEGREES]))
                 return 'okay'
             else:
-                print "set_servo_position: Request of %d degrees. Servo range is 0 to 180 degrees" % int(command[1])
+                print "set_servo_position: demande de rotation de %d degres. Cet angle doit etre compris entre 0 et 180 degres" % int(command[1])
                 # noinspection PyPep8
                 logging.debug("set_servo_position: Request of %d degrees. Servo range is 0 to 180 degrees"
                         % int(command[1]))
                 return 'okay'
         else:
-            print 'set_servo_position: Pin %d was not enabled for SERVO operations.' % pin
+            print 'set_servo_position: le pin %d n a pas ete active comme une commande de servo-moteur' % pin
             logging.debug('set_servo_position: Pin %d was not enabled for SERVO operations.' % pin)
             return '_problem Pin was not enabled for SERVO operations.'
 
