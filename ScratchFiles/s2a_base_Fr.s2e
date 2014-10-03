@@ -13,7 +13,7 @@
         ],
         [
             " ",
-            "%m.pin_state la broche Analogique A%n comme une entrée",
+            "%m.pin_state la broche Analogique A %n comme une entrée",
             "analog_pin_mode",
             "activer",
             "PIN"
@@ -27,7 +27,7 @@
         ],
         [
             "",
-            "écrire sur la broche PWM ~%n la valeur %n",
+            "écrire sur la broche PWM ~ %n la valeur %n",
             "analog_write",
             "PIN",
             "VAL"
@@ -61,7 +61,7 @@
         ],
         [
             "r",
-            "la valeur lue sur la broche Analogique A%n",
+            "la valeur lue sur la broche Analogique A %n",
             "analog_read",
             "PIN"
         ],
