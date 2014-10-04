@@ -1,5 +1,5 @@
 {
-    "extensionName": "Scratch pour Arduino",
+    "extensionName": "Scratch pour Arduino FR 1.7",
     "extensionPort": 50209,
     "url": "https://github.com/MrYsLab/PyMata",
     "blockSpecs": [
