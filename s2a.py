@@ -54,8 +54,10 @@ def s2a_fm():
     # turn on logging
     logging.basicConfig(filename='./log/s2a_fm_debugging.log', filemode='w', level=logging.DEBUG)
     logging.info('s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved ')
+    print 's2a est la version entierement en francais de s2a_fm, une sorte de s2a_fr v1.7'
     print 's2a_fm version 1.5   Copyright(C) 2013-14 Alan Yorinks    Tous droits reserves '
-    print 'Traduction francaise : Sebastien Canet'
+
+	# print 'Traductions francaises : Sebastien Canet'
 
     # get the com_port from the command line or default if none given
     # if user specified the com port on the command line, use that when invoking PyMata,
