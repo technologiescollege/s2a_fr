@@ -18,6 +18,6 @@ echo.
 rem ancienne ligne de commande pour l'auto-detect, pose rarement pb
 rem for /f "tokens=4 delims=: " %%A in ('mode ^| findstr "COM[0-20]*:"') do .\Python\python s2a_fm.py %%A
 
-echo Indiquer le port COM sur lequel est connect‚e votre Arduino (COM1, COM2, ...) :
+echo Indiquer le port COM sur lequel est connect‚e votre Arduino (COM1, COM2, ...) : 
 set /p port=
 .\Python\python s2a.py %port%
