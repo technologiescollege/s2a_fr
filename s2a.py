@@ -23,8 +23,8 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 """
-import os
 import sys
+import os
 import logging
 from PyMata.pymata import PyMata
 import scratch_http_server
@@ -130,7 +130,10 @@ def s2a_fm():
     print "Detection des pins de la carte Arduino faite en %d secondes" % (int(time.time() - start_time))
 
     try:
-        # start the server passing it the handle to PyMata and the command handler.
+        # lance un script pour automatiser l'ouverture de Scratch pendant que le serveur se met en route
+        # il est separe pour permettre aux utilisateurs de le modifier en direct, dans le batch, ca simplifie
+        os.startfile('Scratch2.bat')
+		# start the server passing it the handle to PyMata and the command handler.
         scratch_http_server.start_server(firmata, scratch_command_handler)
 
     except Exception:
