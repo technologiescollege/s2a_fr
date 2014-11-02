@@ -1,7 +1,7 @@
 {
     "extensionName": "Scratch pour Arduino FR 1.7",
     "extensionPort": 50209,
-    "url": "https://github.com/MrYsLab/PyMata",
+    "url": "https://github.com/technologiescollege/s2a_fr",
     "blockSpecs": [
         [
             " ",
@@ -80,7 +80,7 @@
         "digital_pin_mode": [
             "entree",
             "sortie",
-            "impulsion PWM~",
+            "impulsion PWM",
             "rotation Servo-moteur",
             "sortie Son",
             "mesure Sonar"
