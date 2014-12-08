@@ -132,7 +132,7 @@ def s2a_fm():
     try:
         # lance un script pour automatiser l'ouverture de Scratch pendant que le serveur se met en route
         # il est separe pour permettre aux utilisateurs de le modifier en direct, dans le batch, ca simplifie
-        os.startfile('Scratch2.bat')
+        # os.startfile('Scratch2.bat')
 		# start the server passing it the handle to PyMata and the command handler.
         scratch_http_server.start_server(firmata, scratch_command_handler)
 
