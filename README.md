@@ -28,7 +28,7 @@ Version 2.0 de _s2a-fr_ du 8 novembre 2014
 Tout a été traduit, tout a été testé en club robotique, en formation de profs, en classe et tout fonctionne très bien ! Toutefois n'hésitez pas à me dire s'il reste des choses à traduire ou bien si cela a créé des erreurs.
 Si la fenêtre de s2a "saute", c'est très souvent une erreur de faux contact, d'Arduino, etc. Et puis pas de souci car vous disposez d'une
 **INTERFACE GRAPHIQUE** :
-![](/https://github.com/technologiescollege/s2a_fr/blob/portable/documentation/Capture_exe.JPG)
+![](https://github.com/technologiescollege/s2a_fr/blob/portable/documentation/Capture_exe.JPG)
 
 
 Version 1.7 de _s2a-fr_ du 28 septembre 2014
