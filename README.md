@@ -23,6 +23,12 @@ Instructions
 --------------------------
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
 
+Version 2.0 de _s2a-fr_ du 8 novembre 2014
+------------------------
+Tout a été traduit, tout a été testé en club robotique, en formation de profs, en classe et tout fonctionne très bien ! Toutefois n'hésitez pas à me dire s'il reste des choses à traduire ou bien si cela a créé des erreurs.
+Si la fenêtre de s2a "saute", c'est très souvent une erreur de faux contact, d'Arduino, etc. Et puis pas de souci car vous disposez d'une
+**INTERFACE GRAPHIQUE**
+
 Version 1.7 de _s2a-fr_ du 28 septembre 2014
 ------------------------
 Tout a été traduit, même les scripts Python. N'hésitez pas à me dire s'il reste des choses à traduire ou bien si cela a créé des erreurs.
