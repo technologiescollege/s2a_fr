@@ -46,8 +46,8 @@ Voir sur le site de s2a_fm. Il s'agit de la version stable et finale du projet s
 
 Scratch : blocs de l'extension s2a
 -------------------------------
-![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/scratch_blocks.png)
+![ScreenShot](https://github.com/technologiescollege/s2a_fr/blob/portable/documentation/scratch_blocks.png)
 
 Snap! : blocs de l'extension s2a
 -----------------------------
-![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/master/documentation/snap_blocks.png)
+![ScreenShot](https://github.com/technologiescollege/s2a_fr/blob/portable/documentation/snap_blocks.png)
