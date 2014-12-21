@@ -27,6 +27,7 @@ Version 1.8 de _s2a-fr_ du 20 décembre 2014
 ------------------------
 Une interface pour tout gérer ! Enfin simplifié, tout est rassemblé dans ce panneau de commande :
 ![](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/documentation/Capture_exe.JPG)
+
 _Une auto-détection des fichiers .sb2 et l'internationalisation sont en cours_. Cela cloturera le projet à mon sens. SI vous voyez d'autres fonctions, dépêchez-vous de me le dire...
 
 Version 1.7 de _s2a-fr_ du 28 septembre 2014
