@@ -1,12 +1,7 @@
 s2a
 ====
-###Ce projet est un fork d'un projet stable : [Mr Y's Lab s2a_fm](https://github.com/MrYsLab/s2a_fm), ce qui lui a servi de base à son second projet plus évolué : [Xi, une sorte de s2a_v2](https://github.com/MrYsLab/xi).
-
-
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais cette version sera françisée à outrance et portabilisée pour être utilisée facilement**_.
-
-_Lorsque Xi sera stabilisé, on y glissera surement..._
 
 **Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et avoir en même temps l'accès à une interface graphique ? 
 
@@ -50,3 +45,8 @@ Scratch : blocs de l'extension s2a
 Snap! : blocs de l'extension s2a
 -----------------------------
 ![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/documentation/snap_blocks.png)
+
+###Ce projet est un fork d'un projet stable : [Mr Y's Lab s2a_fm](https://github.com/MrYsLab/s2a_fm), ce qui lui a servi de base à son second projet plus évolué : [Xi, une sorte de s2a_v2](https://github.com/MrYsLab/xi).
+
+
+_Lorsque Xi sera stabilisé, on y glissera surement..._
