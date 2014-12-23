@@ -1,7 +1,7 @@
 s2a
 ====
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
-Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais les scripts de cette version seront françisés à outrance et portabilisés pour être utilisée facilement**_.
+Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais les scripts de cette version seront françisés à outrance et portabilisés pour être le plus simple possible**_.
 
 **Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ? 
 
