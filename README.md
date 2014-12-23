@@ -24,6 +24,8 @@ Ca y est ! Tout est fini !
 **Nouveautés** :
 - un dossier "Bibliothèque" qui contient des exemples illustrés d'utilisation de s2a
 - un dossier "Projets" qui contient des exemples de fichiers, un peu un dossier de travail
+- un menu "Fichier" qui liste automatiquement les fichiers des 2 dossiers précédemment décrits
+- un menu "Outils" avec l'accès au gestionnaire de périphériques et la localisation de Scratch2 en hors-ligne
 - un fichier "label.xml" qui contient les **traductions**
 
 Version 1.8 de _s2a-fr_ du 20 décembre 2014
