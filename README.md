@@ -1,9 +1,9 @@
 s2a
 ====
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
-Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais cette version sera françisée à outrance et portabilisée pour être utilisée facilement**_.
+Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. _**Mais les scripts de cette version sera françisée à outrance et portabilisée pour être utilisée facilement**_.
 
-**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et avoir en même temps l'accès à une interface graphique ? 
+**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ? 
 
 **Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des dispositifs physiques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
 
@@ -17,6 +17,14 @@ Cette version fonctionne aussi bien avec la version en ligne que hors-ligne. Tou
 Instructions
 --------------------------
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
+
+Version 2.0 de _s2a-fr_ du 23 décembre 2014
+------------------------
+Ca y est ! Tout est fini !
+**Nouveautés** :
+- un dossier "Bibliothèque" qui contient des exemples illustrés d'utilisation de s2a
+- un dossier "Projets" qui contient des exemples de fichiers, un peu un dossier de travail
+- un fichier "label.xml" qui contient les **traductions**
 
 Version 1.8 de _s2a-fr_ du 20 décembre 2014
 ------------------------
