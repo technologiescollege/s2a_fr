@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Traductions>
+  <Parametre Separateur="\">
+    <Proprietes>
+      <Propriete>Caption</Propriete>
+      <Propriete>Text</Propriete>
+      <Propriete>Hint</Propriete>
+      <Propriete>Items</Propriete>
+    </Proprietes>
+  </Parametre>
+  <Langues>
+    <Langue index="FR" name="FrenchLang" default="1" />
+    <Langue index="EN" name="EnglishLang" default="0" />
+  </Langues>
+  <Labels>
+    <FenetrePrincipale type="TFenetrePrincipale">
+      <Caption>
+        <FR>s2a : connexion Scratch2 - Arduino</FR>
+        <EN>s2a : connecting Scratch2Arduino</EN>
+      </Caption>
+    </FenetrePrincipale>
+    <Label1 type="TLabel">
+      <Caption>
+        <FR>Votre carte Arduino</FR>
+        <EN>Your Arduino card</EN>
+      </Caption>
+    </Label1>
+    <Label2 type="TLabel">
+      <Caption>
+        <FR>est connectée sur</FR>
+        <EN>is connected as</EN>
+      </Caption>
+    </Label2>
+    <Label3 type="TLabel">
+      <Caption>
+        <FR>le port COM</FR>
+        <EN>COM port #</EN>
+      </Caption>
+    </Label3>
+    <Label4 type="TLabel">
+      <Caption>
+        <FR>La fenêtre se fermera s'il y a un problème de port</FR>
+        <EN>The pop-up window will close if there's a COM problem</EN>
+      </Caption>
+    </Label4>
+    <Label5 type="TLabel">
+      <Caption>
+        <FR>ou bien si la carte Arduino est mal programmée.</FR>
+        <EN>or if the Arduino card is not uploaded correctly.</EN>
+      </Caption>
+    </Label5>
+    <Button1 type="TButton">
+      <Caption>
+        <FR>Lancer s2a</FR>
+        <EN>Launch s2a</EN>
+      </Caption>
+    </Button1>
+    <Button2 type="TButton">
+      <Caption>
+        <FR>Lancer Scratch2</FR>
+        <EN>Launch Scratch2</EN>
+      </Caption>
+    </Button2>
+    <ScratchEnLigne type="TButton">
+      <Caption>
+        <FR>Scratch2 en ligne</FR>
+        <EN>Scratch2 online</EN>
+      </Caption>
+    </ScratchEnLigne>
+    <Langue1 type="TMenuItem">
+      <Caption>
+        <FR>&Langues</FR>
+        <EN>&Languages</EN>
+      </Caption>
+    </Langue1>
+    <FrenchLang type="TMenuItem">
+      <Caption>
+        <FR>Français</FR>
+        <EN>French</EN>
+      </Caption>
+    </FrenchLang>
+    <EnglishLang type="TMenuItem">
+      <Caption>
+        <FR>Anglais</FR>
+        <EN>English</EN>
+      </Caption>
+    </EnglishLang>
+    <Fichier type="TMenuItem">
+      <Caption>
+        <FR>&Fichier</FR>
+        <EN>&File</EN>
+      </Caption>
+    </Fichier>
+			<Bibliothque type="TMenuItem">
+			  <Caption>
+				<FR>B&ibliothèque</FR>
+				<EN>L&ibrairie</EN>
+			  </Caption>
+			</Bibliothque>
+			<ExemplesScratch2 type="TMenuItem">
+			  <Caption>
+				<FR>&Projets Scratch2</FR>
+				<EN>&Project Scratch2</EN>
+			  </Caption>
+			</ExemplesScratch2>
+			<Quitter1 type="TMenuItem">
+			  <Caption>
+				<FR>&Quitter</FR>
+				<EN>&Quit</EN>
+			  </Caption>
+			</Quitter1>
+    <Outils1 type="TMenuItem">
+      <Caption>
+        <FR>&Outils</FR>
+        <EN>T&ools</EN>
+      </Caption>
+    </Outils1>
+			<Gestionnairedepriphriques1 type="TMenuItem">
+			  <Caption>
+				<FR>Gestionnaire de périphériques</FR>
+				<EN>Device management</EN>
+			  </Caption>
+			</Gestionnairedepriphriques1>
+			<Ouvrir type="TMenuItem">
+			  <Caption>
+				<FR>&Localiser Scratch 2</FR>
+				<EN>&Locate Scratch2</EN>
+			  </Caption>
+			</Ouvrir>
+    <Documentation1 type="TMenuItem">
+      <Caption>
+        <FR>&Documentation</FR>
+        <EN>&Documentation</EN>
+      </Caption>
+    </Documentation1>
+			<PrparerArduino1 type="TMenuItem">
+			  <Caption>
+				<FR>&1. Préparer la carte Arduino</FR>
+				<EN>&1. prepare Arduino card</EN>
+			  </Caption>
+			</PrparerArduino1>
+			<Utilisation1 type="TMenuItem">
+			  <Caption>
+				<FR>&2. Utilisation de s2a</FR>
+				<EN>&2. how to use s2a</EN>
+			  </Caption>
+			</Utilisation1>
+			<N4Principesdeprogrammation1 type="TMenuItem">
+			  <Caption>
+				<FR>&3. Principes de programmation</FR>
+				<EN>&3. the best way to code</EN>
+			  </Caption>
+			</N4Principesdeprogrammation1>
+			<N3Mmentodescommandes1 type="TMenuItem">
+			  <Caption>
+				<FR>&4. Mémento des commandes</FR>
+				<EN>&4. s2a command summary</EN>
+			  </Caption>
+			</N3Mmentodescommandes1>
+    <AllerplusloinBlocklyDuino1 type="TMenuItem">
+      <Caption>
+        <FR>Aller plus loin avec &BlocklyDuino</FR>
+        <EN>Learn furthermore with &BlocklyDuino</EN>
+      </Caption>
+    </AllerplusloinBlocklyDuino1>
+    <Aide1 type="TMenuItem">
+      <Caption>
+        <FR>&Aide</FR>
+        <EN>&Help</EN>
+      </Caption>
+    </Aide1>
+			<Wiki1 type="TMenuItem">
+			  <Caption>
+				<FR>Wiki</FR>
+				<EN>Wiki</EN>
+			  </Caption>
+			</Wiki1>
+			<A_propos type="TMenuItem">
+			  <Caption>
+				<FR>Fichiers source</FR>
+				<EN>Github file</EN>
+			  </Caption>
+			</A_propos>
+			<Siteofficieldes2a1 type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel de s2a</FR>
+				<EN>s2a official site</EN>
+			  </Caption>
+			</Siteofficieldes2a1>
+			<Apropos1 type="TMenuItem">
+			  <Caption>
+				<FR>A propos</FR>
+				<EN>About</EN>
+			  </Caption>
+			</Apropos1>
+  </Labels>
+</Traductions>
