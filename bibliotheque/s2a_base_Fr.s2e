@@ -5,7 +5,7 @@
     "blockSpecs": [
         [
             " ",
-            "%m.pin_state la broche Digital %n comme une %m.digital_pin_mode",
+            "%m.pin_state la broche Numérique %n comme une %m.digital_pin_mode",
             "digital_pin_mode",
             "activer",
             "PIN",
@@ -20,14 +20,14 @@
         ],
         [
             "",
-            "mettre l'état logique de la broche Digital %n à %m.high_low",
+            "mettre l'état logique de la broche Numérique %n à %m.high_low",
             "digital_write",
             "PIN",
             0
         ],
         [
             "",
-            "écrire sur la broche PWM ~ %n la valeur %n",
+            "écrire sur la broche PWM~ %n la valeur %n",
             "analog_write",
             "PIN",
             "VAL"
@@ -55,7 +55,7 @@
         ],
         [
             "r",
-            "l'état logique de la broche Digital %n",
+            "l'état logique de la broche Numérique %n",
             "digital_read",
             "PIN"
         ],
