@@ -18,7 +18,7 @@ Instructions
 --------------------------
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
 
-Version 2.0 de _s2a-fr_ du 23 décembre 2014
+Version 2.0 de _s2a-fr_, du 23 décembre 2014, qui devient international
 ------------------------
 Ca y est ! Tout est fini !
 **Nouveautés** :
