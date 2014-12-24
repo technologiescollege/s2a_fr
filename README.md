@@ -31,7 +31,7 @@ Ca y est ! Tout est fini !
 Version 1.8 de _s2a-fr_ du 20 décembre 2014
 ------------------------
 Une interface pour tout gérer ! Enfin simplifié, tout est rassemblé dans ce panneau de commande :
-![](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/documentation/Capture_exe.JPG)
+![](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/aide/Capture_exe.JPG)
 
 _Une auto-détection des fichiers .sb2 et l'internationalisation sont en cours_. Cela cloturera le projet à mon sens. SI vous voyez d'autres fonctions, dépêchez-vous de me le dire...
 
@@ -50,11 +50,11 @@ Voir sur le site de s2a_fm. Il s'agit de la version stable et finale du projet s
 
 Scratch : blocs de l'extension s2a
 -------------------------------
-![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/documentation/scratch_blocks.png)
+![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/aide/scratch_blocks.png)
 
 Snap! : blocs de l'extension s2a
 -----------------------------
-![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/documentation/snap_blocks.png)
+![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/aide/snap_blocks.png)
 
 ###Ce projet est un fork d'un projet stable : [Mr Y's Lab s2a_fm](https://github.com/MrYsLab/s2a_fm), ce qui lui a servi de base à son second projet plus évolué : [Xi, une sorte de s2a_v2](https://github.com/MrYsLab/xi).
 
