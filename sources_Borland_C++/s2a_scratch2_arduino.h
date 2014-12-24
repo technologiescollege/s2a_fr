@@ -58,7 +58,6 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *N4;
 	TMenuItem *N5;
 	TMenuItem *Init;
-	TTimer *HintTimer;
 	void __fastcall InitINI();
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);

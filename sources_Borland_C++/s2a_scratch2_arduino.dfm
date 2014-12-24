@@ -13494,8 +13494,4 @@ object InterfaceS2A: TInterfaceS2A
     Options = [ofHideReadOnly, ofNoChangeDir, ofFileMustExist, ofEnableSizing]
     Left = 496
   end
-  object HintTimer: TTimer
-    Left = 496
-    Top = 64
-  end
 end

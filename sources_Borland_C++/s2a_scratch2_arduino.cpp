@@ -23,7 +23,7 @@ TInterfaceS2A *InterfaceS2A;
 TIniFile *INI = new TIniFile(ExtractFilePath(Application->ExeName)+ "s2a.ini");
 //listes pour récupérer le contenu du fichier INI
 int port=2;
-char *locate_scratch2="Scratch 2.exe";
+AnsiString locate_scratch2="Scratch 2.exe";
 AnsiString locate_librairie;
 AnsiString locate_project;
 AnsiString locate_doc;
@@ -55,7 +55,7 @@ __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
 	 InitINI();
   //lecture du fichier INI
   port=INI->ReadInteger("port COM","port",4);
-  locate_scratch2=INI->ReadString("locate Scratch2", "locate_scratch2", "Scratch 2.exe").c_str();
+  locate_scratch2=INI->ReadString("locate Scratch2", "locate_scratch2", "Scratch 2.exe");
   locate_librairie=INI->ReadString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\");
   locate_project=INI->ReadString("locate Project", "locate_project", ExtractFilePath(Application->ExeName) + "projets\\");
   locate_doc=INI->ReadString("locate Documentation", "locate_doc", ExtractFilePath(Application->ExeName) + "documentation\\");
@@ -126,7 +126,7 @@ ofstream fichier_s2("scratch_ex.bat", ios::out | ios::trunc);  // ouverture en é
 		{
 			   //récupération des infos de l'entrée TMenu qui a déclenché cette fonction
 			   CheminNomFichier=static_cast<TMenuItem*>(Sender)->Hint;
-			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2 << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
+			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
 			   fichier_s2.close();
 		}
 		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
@@ -222,7 +222,7 @@ void __fastcall TInterfaceS2A::Button2Click(TObject *Sender)
 ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
-				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2 << '"'<< "\nstart %dossier_scratch% %currentpath%" << locate_librairie.c_str() <<"fichier_depart_s2a.sb2";
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << locate_librairie.c_str() << "fichier_depart_s2a.sb2" << '"' ;
 				fichier_s2.close();
 		}
 		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
