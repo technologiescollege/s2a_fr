@@ -117,8 +117,8 @@
     </Outils1>
 			<Gestionnairedepriphriques1 type="TMenuItem">
 			  <Caption>
-				<FR>Gestionnaire de périphériques</FR>
-				<EN>Device management</EN>
+				<FR>Gestio&nnaire de périphériques</FR>
+				<EN>Device ma&nagement</EN>
 			  </Caption>
 			</Gestionnairedepriphriques1>
 			<Ouvrir type="TMenuItem">
@@ -127,6 +127,12 @@
 				<EN>&Locate Scratch2</EN>
 			  </Caption>
 			</Ouvrir>
+			<Init type="TMenuItem">
+			  <Caption>
+				<FR>Réinitialiser les p&aramètres</FR>
+				<EN>Initialise p&arameters</EN>
+			  </Caption>
+			</Init>		
     <Documentation1 type="TMenuItem">
       <Caption>
         <FR>&Documentation</FR>
