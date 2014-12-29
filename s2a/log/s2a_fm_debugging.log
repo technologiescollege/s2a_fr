@@ -2,3 +2,12 @@ INFO:root:s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights 
 INFO:root:com port = COM4
 INFO:root:70 Total Pins and 16 Analog Pins Found
 INFO:root:Scratch detected! Ready to rock and roll...
+DEBUG:root:analog_write: The value field must be set to a numerical value
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 10 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 9 must be enabled before writing to it.
+DEBUG:root:analog_write: Pin 10 must be enabled before writing to it.
