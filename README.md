@@ -2,31 +2,35 @@ s2a
 ====
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. **Mais les scripts de cette version seront entièrement françisés et portabilisés pour être le plus simple possible**_.
+
 _Translations are also available in Chinese, Dutch, English, German, Korean, Portuguese and Spanish.
 **But the script interpreter for this version will be totally adapted into French and made portable so as to make its use as easy as possible.**_
 
-**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ? 
+**Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ?
+
 _**Arduino's users!** Would you like to configure and control your Arduino micro-controller without having to write a single Arduino code line and at the same time having access to a graphic interface?_
 
 **Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des éléments électroniques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
+
 _**Snap and Scratch's users!**: Would you like to control and communicate with Arduino cards? Suppose while using Scartch or Snap, you can control electonic items such as DELS, motor and hops getting the device values, like temperature sensor, potentiometer or light sensor. What would you create?_
 
 **Ne cherchez plus, s2a est là !**
 _**Don't search anymore, s2a is there for you!**_
 
 _Si vous voulez plus de détails sur le contrôle de moteurs (robots) par WiFi, pour Scratch ou Snap!, consultez l'article de Alan Yorinks sur :
-http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/_
-_If you need more details on the motors control (robots) on the Wifi, for Scratch or Snap!, read Alan Yorinks's article on: http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/_
+http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/
+
+_If you need more details on the motors control (robots) on the Wifi, for Scratch or Snap!, read Alan Yorinks's article on: http://www.instructables.com/id/The-SnapMobile-Start-Your-Physical-Computing-Engin/
 
 Cette version fonctionne aussi bien avec la version en ligne que hors-ligne. Toutefois veillez à vérifier que vous avez une version récente (404 ou supérieure).
+
 _This version works just as well with both the on line and off-line version. Nevertheless make sure you have a new version (404 or more)._ 
 
 Instructions
 --------------------------
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
 
-_Instructions
-In the file Documentation you will find all the details and in the sub file To get further you will find the reference text book as well as the documentations on the additional units (PyMata and PySerial)._
+_In the file Documentation you will find all the details and in the sub file To get further you will find the reference text book as well as the documentations on the additional units (PyMata and PySerial)._
 
 
 
