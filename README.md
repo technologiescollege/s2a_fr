@@ -1,6 +1,8 @@
 s2a
 ====
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
+![](https://github.com/technologiescollege/s2a_fr/raw/portable/aide/s2a_exe.jpg)
+
 Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. **Mais les scripts de cette version seront entièrement françisés et portabilisés pour être le plus simple possible**_.
 
 _Translations are also available in Chinese, Dutch, English, German, Korean, Portuguese and Spanish.
