@@ -38,7 +38,9 @@ _In the folder Documentation you will find all the details and in the sub folder
 
 Version 2.1 du 22 février 2015
 ------------------------
-Rajout de la possibilité de sélectionner les dossiers utilisés pour afficher les documentations, fichiers exemples, etc
+Rajout de la possibilité de sélectionner les dossiers utilisés pour afficher les documentations, fichiers exemples, etc.
+Il est donc possible de modifier les préférences en éditant le fichier 's2a.ini' mais aussi par l'interface graphique.
+_Pensez à relancer le logiciel après._
 
 Version 2.0 de _s2a-fr_, du 23 décembre 2014, qui devient international
 ------------------------
