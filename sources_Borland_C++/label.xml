@@ -127,6 +127,24 @@
 				<EN>&Locate Scratch2</EN>
 			  </Caption>
 			</Ouvrir>
+			<Localiserledossierexemples1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'bibliothèque'</FR>
+				<EN>Locate folder 'librairie'</EN>
+			  </Caption>
+			</Localiserledossierexemples1>
+			<Localiserledossierprojets1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'projets'</FR>
+				<EN>Locate folder 'project'</EN>
+			  </Caption>
+			</Localiserledossierprojets1>
+			<Localiserledossierdocumentation1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser le dossier 'documentation'</FR>
+				<EN>Locate folder 'documentation'</EN>
+			  </Caption>
+			</Localiserledossierdocumentation1>
 			<Init type="TMenuItem">
 			  <Caption>
 				<FR>Réinitialiser les p&aramètres</FR>
@@ -193,6 +211,18 @@
 				<EN>s2a official site</EN>
 			  </Caption>
 			</Siteofficieldes2a1>
+			<SiteofficielArduino1 type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel Arduino</FR>
+				<EN>Arduino official site</EN>
+			  </Caption>
+			</SiteofficielArduino1>
+			<lchargerlesdrivers1 type="TMenuItem">
+			  <Caption>
+				<FR>Télécharger les drivers</FR>
+				<EN>Download Arduino drivers</EN>
+			  </Caption>
+			</lchargerlesdrivers1>
 			<Apropos1 type="TMenuItem">
 			  <Caption>
 				<FR>A propos</FR>

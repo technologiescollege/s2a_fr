@@ -274,7 +274,7 @@ void __fastcall TInterfaceS2A::Edit1KeyPress(TObject *Sender, char &Key)
 
 void __fastcall TInterfaceS2A::Apropos1Click(TObject *Sender)
 {
-ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.0");
+ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.1");
 }
 //---------------------------------------------------------------------------
 
@@ -303,5 +303,38 @@ Edit1->Text=IntToStr(port);
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TInterfaceS2A::SiteofficielArduino1Click(TObject *Sender)
+{
+ShellExecute(0, 0, "http://arduino.cc/en/Main/Software", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
 
+void __fastcall TInterfaceS2A::lchargerlesdrivers1Click(TObject *Sender)
+{
+ShellExecute(0, 0, "https://github.com/technologiescollege/drivers", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+void __fastcall TInterfaceS2A::Localiserledossierexemples1Click(TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_librairie=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Librairie", "locate_librairie", locate_librairie);
+}
+//---------------------------------------------------------------------------
 
+void __fastcall TInterfaceS2A::Localiserledossierprojets1Click(TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_project=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Project", "locate_project", locate_project);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceS2A::Localiserledossierdocumentation1Click(
+      TObject *Sender)
+{
+if (OpenDialog->Execute()==true) locate_doc=ExtractFilePath(OpenDialog->FileName);
+//écriture dans le fichier INI
+INI->WriteString("locate Documentation", "locate_doc", locate_doc);
+}
+//---------------------------------------------------------------------------
