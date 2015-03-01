@@ -1,3 +1,6 @@
 INFO:root:s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved 
-INFO:root:com port = COM4
-INFO:root:70 Total Pins and 16 Analog Pins Found
+INFO:root:com port = COM3
+INFO:root:20 Total Pins and 6 Analog Pins Found
+INFO:root:Scratch detected! Ready to rock and roll...
+DEBUG:root:set_servo_position: Pin 9 was not enabled for SERVO operations.
+DEBUG:root:set_servo_position: Pin 9 was not enabled for SERVO operations.
