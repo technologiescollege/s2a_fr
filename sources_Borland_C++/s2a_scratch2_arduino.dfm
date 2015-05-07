@@ -3,7 +3,7 @@ object InterfaceS2A: TInterfaceS2A
   Top = 0
   AutoSize = True
   Caption = 's2a : connexion Scratch2 - Arduino'
-  ClientHeight = 196
+  ClientHeight = 228
   ClientWidth = 521
   Color = clWindow
   Font.Charset = DEFAULT_CHARSET
@@ -13345,9 +13345,9 @@ object InterfaceS2A: TInterfaceS2A
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 335
+    Left = 341
     Top = 155
-    Width = 186
+    Width = 180
     Height = 41
     Caption = 'Lancer Scratch2'
     Font.Charset = DEFAULT_CHARSET
@@ -13361,9 +13361,9 @@ object InterfaceS2A: TInterfaceS2A
     OnClick = Button2Click
   end
   object ScratchEnLigne: TButton
-    Left = 335
+    Left = 341
     Top = 108
-    Width = 186
+    Width = 180
     Height = 41
     Caption = 'Scratch2 en ligne'
     Font.Charset = DEFAULT_CHARSET
@@ -13377,7 +13377,7 @@ object InterfaceS2A: TInterfaceS2A
     OnClick = ScratchEnLigneClick
   end
   object Edit1: TEdit
-    Left = 125
+    Left = 145
     Top = 63
     Width = 39
     Height = 35
@@ -13393,6 +13393,25 @@ object InterfaceS2A: TInterfaceS2A
     ParentFont = False
     TabOrder = 3
     OnKeyPress = Edit1KeyPress
+  end
+  object Popup: TComboBox
+    Left = 224
+    Top = 198
+    Width = 145
+    Height = 30
+    Enabled = False
+    ItemHeight = 22
+    TabOrder = 4
+    Text = 'Popup'
+    Visible = False
+    Items.Strings = (
+      'Le fichier scratch2.bat n'#39'existe pas.'
+      'Le fichier scratch2.bat n'#39'existe pas.'
+      'Le fichier s2a_cmd.bat n'#39'existe pas.'
+      'Le num'#233'ro du port COM doit '#234'tre un entier.'
+      
+        'Interface r'#233'alis'#233'e par S'#233'bastien Canet, d'#233'cembre 2014 - v2.1.1 m' +
+        'ai 2015')
   end
   object MainMenu1: TMainMenu
     Left = 496

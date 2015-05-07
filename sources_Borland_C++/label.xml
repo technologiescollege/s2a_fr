@@ -11,222 +11,273 @@
   <Langues>
     <Langue index="FR" name="FrenchLang" default="1" />
     <Langue index="EN" name="EnglishLang" default="0" />
+    <Langue index="ES" name="SpanishLang" default="0" />
   </Langues>
   <Labels>
+    <Popup type="TComboBox">
+      <Items>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.1.1 - mai 2015</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</EN>
+		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</ES>
+      </Items>
+    </Popup>
     <FenetrePrincipale type="TFenetrePrincipale">
       <Caption>
         <FR>s2a : connexion Scratch2 - Arduino</FR>
         <EN>s2a : connecting Scratch2Arduino</EN>
+        <ES>s2a : conectando Scratch2Arduino</ES>
       </Caption>
     </FenetrePrincipale>
     <Label1 type="TLabel">
       <Caption>
         <FR>Votre carte Arduino</FR>
         <EN>Your Arduino card</EN>
+        <ES>Su tarjeta Arduino</ES>
       </Caption>
     </Label1>
     <Label2 type="TLabel">
       <Caption>
         <FR>est connectée sur</FR>
         <EN>is connected as</EN>
+        <ES>esta conecatad en</ES>
       </Caption>
     </Label2>
     <Label3 type="TLabel">
       <Caption>
         <FR>le port COM</FR>
         <EN>COM port #</EN>
+        <ES>el puerto COM</ES>
       </Caption>
     </Label3>
     <Label4 type="TLabel">
       <Caption>
         <FR>La fenêtre se fermera s'il y a un problème de port</FR>
         <EN>The pop-up window will close if there's a COM problem</EN>
+        <ES>La ventana emergente se cerrara si hay un problema COM</ES>
       </Caption>
     </Label4>
     <Label5 type="TLabel">
       <Caption>
         <FR>ou bien si la carte Arduino est mal programmée.</FR>
         <EN>or if the Arduino card is not uploaded correctly.</EN>
+        <ES>o si la tarjeta Arduino no se carga correctamente.</ES>
       </Caption>
     </Label5>
     <Button1 type="TButton">
       <Caption>
         <FR>Lancer s2a</FR>
         <EN>Launch s2a</EN>
+        <ES>Lanzar s2a</ES>
       </Caption>
     </Button1>
     <Button2 type="TButton">
       <Caption>
         <FR>Lancer Scratch2</FR>
         <EN>Launch Scratch2</EN>
+        <ES>Lanzar Scratch2</ES>
       </Caption>
     </Button2>
     <ScratchEnLigne type="TButton">
       <Caption>
         <FR>Scratch2 en ligne</FR>
         <EN>Scratch2 online</EN>
+        <ES>Scratch2 en linea</ES>
       </Caption>
     </ScratchEnLigne>
     <Langue1 type="TMenuItem">
       <Caption>
         <FR>&Langues</FR>
         <EN>&Languages</EN>
+        <ES>&Lenguajes</ES>
       </Caption>
     </Langue1>
     <FrenchLang type="TMenuItem">
       <Caption>
         <FR>Français</FR>
         <EN>French</EN>
+        <ES>Françes</ES>
       </Caption>
     </FrenchLang>
     <EnglishLang type="TMenuItem">
       <Caption>
         <FR>Anglais</FR>
         <EN>English</EN>
+        <ES>Englices</ES>
       </Caption>
     </EnglishLang>
+    <SpanishLang type="TMenuItem">
+      <Caption>
+        <FR>Espagnol</FR>
+        <EN>Spanish</EN>
+        <ES>Espanol</ES>
+      </Caption>
+    </SpanishLang>
     <Fichier type="TMenuItem">
       <Caption>
         <FR>&Fichier</FR>
         <EN>&File</EN>
+        <ES>&Archivo</ES>
       </Caption>
     </Fichier>
 			<Bibliothque type="TMenuItem">
 			  <Caption>
 				<FR>B&ibliothèque</FR>
 				<EN>L&ibrairie</EN>
+				<ES>L&ibrerias</ES>
 			  </Caption>
 			</Bibliothque>
 			<ExemplesScratch2 type="TMenuItem">
 			  <Caption>
 				<FR>&Projets Scratch2</FR>
 				<EN>&Project Scratch2</EN>
+				<ES>&Proyecto Scratch2</ES>
 			  </Caption>
 			</ExemplesScratch2>
 			<Quitter1 type="TMenuItem">
 			  <Caption>
 				<FR>&Quitter</FR>
 				<EN>&Quit</EN>
+				<ES>&Salir</ES>
 			  </Caption>
 			</Quitter1>
     <Outils1 type="TMenuItem">
       <Caption>
         <FR>&Outils</FR>
         <EN>T&ools</EN>
+        <ES>H&erramientas</ES>
       </Caption>
     </Outils1>
 			<Gestionnairedepriphriques1 type="TMenuItem">
 			  <Caption>
 				<FR>Gestio&nnaire de périphériques</FR>
 				<EN>Device ma&nagement</EN>
+				<ES>Gestion de p&eriféricos</ES>
 			  </Caption>
 			</Gestionnairedepriphriques1>
 			<Ouvrir type="TMenuItem">
 			  <Caption>
 				<FR>&Localiser Scratch 2</FR>
 				<EN>&Locate Scratch2</EN>
+				<ES>&Localizar Scratch2</ES>
 			  </Caption>
 			</Ouvrir>
 			<Localiserledossierexemples1 type="TMenuItem">
 			  <Caption>
 				<FR>Localiser le dossier 'bibliothèque'</FR>
 				<EN>Locate folder 'librairie'</EN>
+				<ES>Localizar carpeta de 'librerias'</ES>
 			  </Caption>
 			</Localiserledossierexemples1>
 			<Localiserledossierprojets1 type="TMenuItem">
 			  <Caption>
 				<FR>Localiser le dossier 'projets'</FR>
 				<EN>Locate folder 'project'</EN>
+				<ES>Localizar carpeta de 'proyectos'</ES>
 			  </Caption>
 			</Localiserledossierprojets1>
 			<Localiserledossierdocumentation1 type="TMenuItem">
 			  <Caption>
 				<FR>Localiser le dossier 'documentation'</FR>
 				<EN>Locate folder 'documentation'</EN>
+				<ES>Localizar carpeta de 'documentacion'</ES>
 			  </Caption>
 			</Localiserledossierdocumentation1>
 			<Init type="TMenuItem">
 			  <Caption>
 				<FR>Réinitialiser les p&aramètres</FR>
 				<EN>Initialise p&arameters</EN>
+				<ES>Inicializar los p&arametros</ES>
 			  </Caption>
 			</Init>		
     <Documentation1 type="TMenuItem">
       <Caption>
         <FR>&Documentation</FR>
         <EN>&Documentation</EN>
+        <ES>&Documentacion</ES>
       </Caption>
     </Documentation1>
 			<PrparerArduino1 type="TMenuItem">
 			  <Caption>
 				<FR>&1. Préparer la carte Arduino</FR>
 				<EN>&1. prepare Arduino card</EN>
+				<ES>&1. Preparar la tarjeta Arduino</ES>
 			  </Caption>
 			</PrparerArduino1>
 			<Utilisation1 type="TMenuItem">
 			  <Caption>
 				<FR>&2. Utilisation de s2a</FR>
 				<EN>&2. how to use s2a</EN>
+				<ES>&2. Utilizacion de s2a</ES>
 			  </Caption>
 			</Utilisation1>
 			<N4Principesdeprogrammation1 type="TMenuItem">
 			  <Caption>
 				<FR>&3. Principes de programmation</FR>
 				<EN>&3. the best way to code</EN>
+				<ES>&3. Principios de programacion</ES>
 			  </Caption>
 			</N4Principesdeprogrammation1>
 			<N3Mmentodescommandes1 type="TMenuItem">
 			  <Caption>
 				<FR>&4. Mémento des commandes</FR>
 				<EN>&4. s2a command summary</EN>
+				<ES>&4. Aviso de ordenes</ES>
 			  </Caption>
 			</N3Mmentodescommandes1>
     <AllerplusloinBlocklyDuino1 type="TMenuItem">
       <Caption>
-        <FR>Aller plus loin avec &BlocklyDuino</FR>
-        <EN>Learn furthermore with &BlocklyDuino</EN>
+        <FR>Aller plus loin avec &Blockly@rduino</FR>
+        <EN>&Go furthermore with Blockly@rduino</EN>
+        <ES>Ademas con &Blockly@rduino</ES>
       </Caption>
     </AllerplusloinBlocklyDuino1>
     <Aide1 type="TMenuItem">
       <Caption>
         <FR>&Aide</FR>
         <EN>&Help</EN>
+        <ES>&Ayuda</ES>
       </Caption>
     </Aide1>
 			<Wiki1 type="TMenuItem">
 			  <Caption>
 				<FR>Wiki</FR>
 				<EN>Wiki</EN>
+				<ES>Wiki</ES>
 			  </Caption>
 			</Wiki1>
 			<A_propos type="TMenuItem">
 			  <Caption>
 				<FR>Fichiers source</FR>
 				<EN>Github file</EN>
+				<ES>Ficheros fuente</ES>
 			  </Caption>
 			</A_propos>
 			<Siteofficieldes2a1 type="TMenuItem">
 			  <Caption>
 				<FR>Site officiel de s2a</FR>
 				<EN>s2a official site</EN>
+				<ES>Sitio oficial de s2a</ES>
 			  </Caption>
 			</Siteofficieldes2a1>
 			<SiteofficielArduino1 type="TMenuItem">
 			  <Caption>
 				<FR>Site officiel Arduino</FR>
 				<EN>Arduino official site</EN>
+				<ES>Sitio oficial de Arduino</ES>
 			  </Caption>
 			</SiteofficielArduino1>
 			<lchargerlesdrivers1 type="TMenuItem">
 			  <Caption>
 				<FR>Télécharger les drivers</FR>
 				<EN>Download Arduino drivers</EN>
+				<ES>Cargar drivers de Arduino</ES>
 			  </Caption>
 			</lchargerlesdrivers1>
 			<Apropos1 type="TMenuItem">
 			  <Caption>
 				<FR>A propos</FR>
 				<EN>About</EN>
+				<ES>Acerca de</ES>
 			  </Caption>
 			</Apropos1>
   </Labels>

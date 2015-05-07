@@ -134,7 +134,7 @@ ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écr
 			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
 			   fichier_s2.close();
 		}
-		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[0]);
 ShellExecute(0, 0, "scratch2.bat", 0, 0 , SW_HIDE );
 }
 //-------------------------recherche des fichiers de docs pour les lister dans les menus Aide & Documentation---------------
@@ -189,7 +189,7 @@ ShellExecute(0, 0, "http://mryslab.blogspot.fr/", 0, 0 , SW_SHOW );
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceS2A::AllerplusloinBlocklyDuino1Click(TObject *Sender)
 {
-ShellExecute(0, 0, "http://www.technologiescollege.fr/blocklyduino", 0, 0 , SW_SHOW );
+ShellExecute(0, 0, "http://www.technologiescollege.fr/blockly@rduino", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceS2A::PrparerArduino1Click(TObject *Sender)
@@ -230,7 +230,7 @@ ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écr
 				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << locate_librairie.c_str() << "fichier_depart_s2a.sb2" << '"' ;
 				fichier_s2.close();
 		}
-		else ShowMessage("Le fichier scratch2.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[1]);
 ShellExecute(0, 0, "scratch2.bat", 0, 0 , SW_HIDE );
 }
 //---------------------------------------------------------------------------
@@ -244,7 +244,7 @@ ofstream fichier_s2a("s2a_cmd.bat", ios::out | ios::trunc);  // ouverture en écr
 				fichier_s2a << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%s2a\ncls\n.\\Python\\python.exe s2a.py COM" << port;
 				fichier_s2a.close();
 		}
-		else ShowMessage("Le fichier s2a_cmd.bat n'existe pas.");
+		else ShowMessage(Popup->Items->Strings[2]);
 ShellExecute(0, 0, "s2a_cmd.bat", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
@@ -266,7 +266,7 @@ void __fastcall TInterfaceS2A::Edit1KeyPress(TObject *Sender, char &Key)
 {
   if (Key < '0' || Key >'9')
 	{
-	ShowMessage("Le numéro du port COM doit être un entier.");
+	ShowMessage(Popup->Items->Strings[3]);
 	Key=NULL;
 	}
 }
@@ -274,7 +274,7 @@ void __fastcall TInterfaceS2A::Edit1KeyPress(TObject *Sender, char &Key)
 
 void __fastcall TInterfaceS2A::Apropos1Click(TObject *Sender)
 {
-ShowMessage("Interface réalisée par Sébastien Canet, décembre 2014.\nv2.1");
+ShowMessage(Popup->Items->Strings[4]);
 }
 //---------------------------------------------------------------------------
 

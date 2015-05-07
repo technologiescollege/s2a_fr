@@ -14,6 +14,13 @@
     <Langue index="ES" name="SpanishLang" default="0" />
   </Langues>
   <Labels>
+    <Popup type="TComboBox">
+      <Items>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.1.1 - mai 2015</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</EN>
+		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</ES>
+      </Items>
+    </Popup>
     <FenetrePrincipale type="TFenetrePrincipale">
       <Caption>
         <FR>s2a : connexion Scratch2 - Arduino</FR>
@@ -219,9 +226,9 @@
 			</N3Mmentodescommandes1>
     <AllerplusloinBlocklyDuino1 type="TMenuItem">
       <Caption>
-        <FR>Aller plus loin avec &BlocklyDuino</FR>
-        <EN>&Go furthermore with BlocklyDuino</EN>
-        <ES>Ademas con &BlocklyDuino</ES>
+        <FR>Aller plus loin avec &Blockly@rduino</FR>
+        <EN>&Go furthermore with Blockly@rduino</EN>
+        <ES>Ademas con &Blockly@rduino</ES>
       </Caption>
     </AllerplusloinBlocklyDuino1>
     <Aide1 type="TMenuItem">

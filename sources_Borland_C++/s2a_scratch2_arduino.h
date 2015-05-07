@@ -65,6 +65,7 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *Localiserledossierprojets1;
 	TMenuItem *Localiserledossierdocumentation1;
 	TOpenDialog *OpenDialog;
+	TComboBox *Popup;
 	void __fastcall InitINI();
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
