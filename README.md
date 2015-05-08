@@ -37,6 +37,10 @@ Vous trouverez dans le dossier Documentation tous les détails, et dans le sous 
 
 _In the folder Documentation you will find all the details and in the sub folder "Approfondissement" you will find the reference book as well as the documentations on the additional units (PyMata and PySerial)._
 
+Version 2.1.1 du 8 mai 2015
+------------------------
+Rajouts de traductions qui m'avaient échappées.
+Correction du lien vers [Blockly@rduino](https://github.com/technologiescollege/Blockly-at-rduino).
 
 Version 2.1 du 22 février 2015
 ------------------------
