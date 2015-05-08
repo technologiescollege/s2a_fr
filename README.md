@@ -40,6 +40,7 @@ _In the folder Documentation you will find all the details and in the sub folder
 Version 2.1.1 du 8 mai 2015
 ------------------------
 Rajouts de traductions qui m'avaient échappées.
+
 Correction du lien vers [Blockly@rduino](https://github.com/technologiescollege/Blockly-at-rduino).
 
 Version 2.1 du 22 février 2015
