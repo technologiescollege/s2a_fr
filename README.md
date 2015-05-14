@@ -1,14 +1,14 @@
 s2a
 ====
-International : FR / EN / ES
+International : FR / EN / ES (_thanks to José Manuel Ruiz_)
 
-![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 ![](https://github.com/technologiescollege/s2a_fr/raw/portable/aide/s2a_exe.jpg)
-
-Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. **Mais les scripts de cette version seront entièrement françisés et portabilisés pour être le plus simple possible**_.
+![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
 
 _Translations are also available in Chinese, Dutch, English, German, Korean, Portuguese and Spanish.
 **But the script interpreter for this version is made portable so as to make its use as easy as possible.**_
+
+Des traductions sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. **Mais les scripts de cette version seront entièrement françisés et portabilisés pour être le plus simple possible**_.
 
 **Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ?
 
@@ -36,6 +36,10 @@ Instructions
 Vous trouverez dans le dossier Documentation tous les détails, et dans le sous dossier Approfondissement vous trouverez le manuel de référence ainsi que les documentations des modules supplémentaires (PyMata et PySerial).
 
 _In the folder Documentation you will find all the details and in the sub folder "Approfondissement" you will find the reference book as well as the documentations on the additional units (PyMata and PySerial)._
+
+Version 2.2.0 du 14 mai 2015
+------------------------
+Téléversement de FirmataPlus depuis le menu 'Outils'.
 
 Version 2.1.1 du 8 mai 2015
 ------------------------
@@ -88,6 +92,3 @@ Snap! : blocs de l'extension s2a
 ![ScreenShot](https://raw.githubusercontent.com/technologiescollege/s2a_fr/portable/aide/snap_blocks.png)
 
 ###Ce projet est un fork d'un projet stable : [Mr Y's Lab s2a_fm](https://github.com/MrYsLab/s2a_fm), ce qui lui a servi de base à son second projet plus évolué : [Xi, une sorte de s2a_v2](https://github.com/MrYsLab/xi).
-
-
-_Lorsque Xi sera stabilisé, on y glissera surement..._
