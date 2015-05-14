@@ -338,3 +338,34 @@ if (OpenDialog->Execute()==true) locate_doc=ExtractFilePath(OpenDialog->FileName
 INI->WriteString("locate Documentation", "locate_doc", locate_doc);
 }
 //---------------------------------------------------------------------------
+void __fastcall TInterfaceS2A::Firmata_UnoClick(TObject *Sender)
+{
+port=this->Edit1->Text.ToInt();
+INI->WriteInteger("port COM", "port", port);
+ofstream fichier_s2("flash_uno.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+		if(fichier_s2)
+		{
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega328p -carduino -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Uno.hex:i" << "\npause";
+				fichier_s2.close();
+		}
+		else ShowMessage(Popup->Items->Strings[1]);
+ShellExecute(0, 0, "flash_uno.bat", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TInterfaceS2A::Firmata_MegaClick(TObject *Sender)
+{
+port=this->Edit1->Text.ToInt();
+INI->WriteInteger("port COM", "port", port);
+ofstream fichier_s2("flash_mega.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+		if(fichier_s2)
+		{
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega2560 -cwiring -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Mega.hex:i" << "\npause";
+				fichier_s2.close();
+		}
+		else ShowMessage(Popup->Items->Strings[1]);
+ShellExecute(0, 0, "flash_mega.bat", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+

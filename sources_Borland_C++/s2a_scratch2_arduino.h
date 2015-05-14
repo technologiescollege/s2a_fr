@@ -66,6 +66,10 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *Localiserledossierdocumentation1;
 	TOpenDialog *OpenDialog;
 	TComboBox *Popup;
+	TMenuItem *N7;
+	TMenuItem *Firmata;
+	TMenuItem *Firmata_Uno;
+	TMenuItem *Firmata_Mega;
 	void __fastcall InitINI();
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
@@ -93,6 +97,8 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall Localiserledossierexemples1Click(TObject *Sender);
 	void __fastcall Localiserledossierprojets1Click(TObject *Sender);
 	void __fastcall Localiserledossierdocumentation1Click(TObject *Sender);
+	void __fastcall Firmata_UnoClick(TObject *Sender);
+	void __fastcall Firmata_MegaClick(TObject *Sender);
 private:	// Déclarations de l'utilisateur
 	TLabel * interLabel ;
 	TButton * interButton ;

@@ -16,9 +16,9 @@
   <Labels>
     <Popup type="TComboBox">
       <Items>
-        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.1.1 - mai 2015</FR>
-        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</EN>
-		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.1.1 - mai 2015</ES>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2 - mai 2015</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2 - mai 2015</EN>
+		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2 - mai 2015</ES>
       </Items>
     </Popup>
     <FenetrePrincipale type="TFenetrePrincipale">
@@ -189,6 +189,27 @@
 				<ES>Inicializar los p&arametros</ES>
 			  </Caption>
 			</Init>		
+			<Firmata type="TMenuItem">
+			  <Caption>
+				<FR>Téléverser 'FirmataPlus' dans une carte</FR>
+				<EN>Upload 'FirmataPlus'</EN>
+				<ES>Upload 'FirmataPlus'</ES>
+			  </Caption>
+			</Firmata>	
+				<Firmata_Uno type="TMenuItem">
+				  <Caption>
+					<FR>Arduino Uno</FR>
+					<EN>Arduino Uno</EN>
+					<ES>Arduino Uno</ES>
+				  </Caption>
+				</Firmata_Uno>	
+				<Firmata_Mega type="TMenuItem">
+				  <Caption>
+					<FR>Arduino Mega (2560)</FR>
+					<EN>Arduino Mega (2560)</EN>
+					<ES>Arduino Mega (2560)</ES>
+				  </Caption>
+				</Firmata_Mega>	
     <Documentation1 type="TMenuItem">
       <Caption>
         <FR>&Documentation</FR>

@@ -13443,7 +13443,7 @@ object InterfaceS2A: TInterfaceS2A
       end
       object Ouvrir: TMenuItem
         Caption = '&Localiser Scratch 2'
-        Hint = 'Parcourrir le disque dur pour la version hors ligne de Scratch2'
+        Hint = 'Parcourir le disque dur pour la version hors ligne de Scratch2'
         OnClick = OuvrirClick
       end
       object Localiserledossierexemples1: TMenuItem
@@ -13465,6 +13465,20 @@ object InterfaceS2A: TInterfaceS2A
         Caption = 'R'#233'initialiser les param'#232'tres'
         Hint = 'Init'
         OnClick = InitClick
+      end
+      object N7: TMenuItem
+        Caption = '-'
+      end
+      object Firmata: TMenuItem
+        Caption = 'T'#233'l'#233'verser '#39'FirmataPlus'#39
+        object Firmata_Uno: TMenuItem
+          Caption = 'Arduino Uno'
+          OnClick = Firmata_UnoClick
+        end
+        object Firmata_Mega: TMenuItem
+          Caption = 'Arduino Mega (2560)'
+          OnClick = Firmata_MegaClick
+        end
       end
     end
     object Documentation1: TMenuItem

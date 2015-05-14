@@ -211,8 +211,8 @@
           <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
           <VersionInfo Name="AutoIncBuild">False</VersionInfo>
           <VersionInfo Name="MajorVer">2</VersionInfo>
-          <VersionInfo Name="MinorVer">1</VersionInfo>
-          <VersionInfo Name="Release">1</VersionInfo>
+          <VersionInfo Name="MinorVer">2</VersionInfo>
+          <VersionInfo Name="Release">0</VersionInfo>
           <VersionInfo Name="Build">0</VersionInfo>
           <VersionInfo Name="Debug">False</VersionInfo>
           <VersionInfo Name="PreRelease">False</VersionInfo>
@@ -225,13 +225,13 @@
         <VersionInfoKeys>
           <VersionInfoKeys Name="CompanyName">WorldCompany</VersionInfoKeys>
           <VersionInfoKeys Name="FileDescription">s2a</VersionInfoKeys>
-          <VersionInfoKeys Name="FileVersion">2.1.1.0</VersionInfoKeys>
+          <VersionInfoKeys Name="FileVersion">2.2.0.0</VersionInfoKeys>
           <VersionInfoKeys Name="InternalName">s2a</VersionInfoKeys>
           <VersionInfoKeys Name="LegalCopyright">Sébastien Canet</VersionInfoKeys>
           <VersionInfoKeys Name="LegalTrademarks">CC-BY-NC</VersionInfoKeys>
           <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
           <VersionInfoKeys Name="ProductName">Lien Scratch2 &lt;-&gt; s2a &lt;-&gt; Arduino</VersionInfoKeys>
-          <VersionInfoKeys Name="ProductVersion">2.1.1</VersionInfoKeys>
+          <VersionInfoKeys Name="ProductVersion">2.2</VersionInfoKeys>
           <VersionInfoKeys Name="Comments">Lien Scratch2 &lt;-&gt; s2a &lt;-&gt; Arduino</VersionInfoKeys>
         </VersionInfoKeys>
         <Debugging>
