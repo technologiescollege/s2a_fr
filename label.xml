@@ -178,8 +178,8 @@
 			<Firmata type="TMenuItem">
 			  <Caption>
 				<FR>&Téléverser 'FirmataPlus' dans une carte</FR>
-				<EN>&Upload 'FirmataPlus'</EN>
-				<ES>&Upload 'FirmataPlus'</ES>
+				<EN>&Upload 'FirmataPlus' in card</EN>
+				<ES>&Upload 'FirmataPlus' in card</ES>
 			  </Caption>
 			</Firmata>	
 					<Firmata_Uno type="TMenuItem">
