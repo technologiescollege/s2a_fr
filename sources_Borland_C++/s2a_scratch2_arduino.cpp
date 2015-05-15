@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+ï»¿//---------------------------------------------------------------------------
 
 #include <vcl.h>
 #include <stdio.h>
@@ -21,7 +21,7 @@ using namespace std;  //pour les traductions
 #pragma resource "*.dfm"
 TInterfaceS2A *InterfaceS2A;
 TIniFile *INI = new TIniFile(ExtractFilePath(Application->ExeName)+ "s2a.ini");
-//listes pour récupérer le contenu du fichier INI
+//listes pour rÃ©cupÃ©rer le contenu du fichier INI
 int port=2;
 int choix_langue;
 AnsiString locate_scratch2="Scratch 2.exe";
@@ -39,20 +39,20 @@ TStringList *Extensions2 = new TStringList;
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceS2A::InitINI()
 {
-  //écriture dans le fichier INI des variables utiles
-  INI->WriteInteger("port COM", "port", 3);      //port par défaut pour initialiser
-  INI->WriteString("locate Scratch2", "locate_scratch2", "Scratch 2.exe"); //chemin par défaut pour initialiser
-  INI->WriteInteger("langue", "langue", 0); //dans le fichier label.xml, à la balise <Langues>, cela correspond au n° du rang de la langue
-  //dossiers à utiliser pour les documents
-  INI->WriteString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\"); //chemin par défaut pour initialiser
-  INI->WriteString("locate Project", "locate_project", ExtractFilePath(Application->ExeName) + "projets\\"); //chemin par défaut pour initialiser
-  INI->WriteString("locate Documentation", "locate_doc", ExtractFilePath(Application->ExeName) + "documentation\\"); //chemin par défaut pour initialiser
+  //Ã©criture dans le fichier INI des variables utiles
+  INI->WriteInteger("port COM", "port", 3);      //port par dÃ©faut pour initialiser
+  INI->WriteString("locate Scratch2", "locate_scratch2", "Scratch 2.exe"); //chemin par dÃ©faut pour initialiser
+  INI->WriteInteger("langue", "langue", 0); //dans le fichier label.xml, Ã  la balise <Langues>, cela correspond au nÂ° du rang de la langue
+  //dossiers Ã  utiliser pour les documents
+  INI->WriteString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\"); //chemin par dÃ©faut pour initialiser
+  INI->WriteString("locate Project", "locate_project", ExtractFilePath(Application->ExeName) + "projets\\"); //chemin par dÃ©faut pour initialiser
+  INI->WriteString("locate Documentation", "locate_doc", ExtractFilePath(Application->ExeName) + "documentation\\"); //chemin par dÃ©faut pour initialiser
 }
 //---------------------------------------------------------------------------
 __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
 	: TForm(Owner)
 {
-  //vérification de l'existence du fichier INI, sinon le recréé
+  //vÃ©rification de l'existence du fichier INI, sinon le recrÃ©Ã©
   if (!FileExists(ExtractFilePath(Application->ExeName)+ "s2a.ini"))
 	 InitINI();
   //lecture du fichier INI
@@ -65,12 +65,12 @@ __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
 
   //nettoie le champ du TEdit et y place la valeur lue dans le INI
   Edit1->Clear();
-  //procédure de contrôle si le fichier INI est mal rempli
+  //procÃ©dure de contrÃ´le si le fichier INI est mal rempli
   port=INI->ReadInteger("port COM", "port", 3);
   Edit1->Text=IntToStr(port);
 
   Extensions1->Add(".sb2");
-  // Appel à Search, avec pour liste des fichiers, les items des listes Bibilo & Examples.
+  // Appel Ã  Search, avec pour liste des fichiers, les items des listes Bibilo & Examples.
   SearchEx(locate_librairie, Extensions1, Biblio,0);
   SearchEx(locate_project, Extensions1, Examples,1);
   delete Extensions1;
@@ -80,15 +80,15 @@ __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
   Extensions2->Add(".url");
   Extensions2->Add(".html");
   Extensions2->Add(".htm");  
-  // Appel à SearchDocs, avec pour liste des fichiers les items de Documentation.
+  // Appel Ã  SearchDocs, avec pour liste des fichiers les items de Documentation.
   SearchDocs(locate_doc, Extensions2, Docs,2);
   delete Extensions2;
 
-  //appel à la procédure pour gérer les langues
+  //appel Ã  la procÃ©dure pour gÃ©rer les langues
   AnsiString file = ExtractFilePath(Application->ExeName) + "label.xml";
   langue = new GestionLangue;
   langue->Init(InterfaceS2A->Langue1,file.c_str(),(ptrOnClick)&Langue1Click);
-  //après l'initialisation des langues, le système pioche la langue précédemment sélectionnée
+  //aprÃ¨s l'initialisation des langues, le systÃ¨me pioche la langue prÃ©cÃ©demment sÃ©lectionnÃ©e
   langue->Change(choix_langue);
 }
 //-------------------------recherche des fichiers sb2 pour les lister dans le menu Fichier--------------------------------------------------
@@ -103,18 +103,18 @@ void __fastcall TInterfaceS2A::SearchEx(AnsiString FilePath, TStringList * Exten
 	{
 	  if (ExtractFileExt(Infos_fichier.Name).LowerCase() == Extensions->Strings[i].LowerCase())
 	  {
-		//ajout dans la liste d'une ligne avec le chemin+nom du fichier trouvé
+		//ajout dans la liste d'une ligne avec le chemin+nom du fichier trouvÃ©
 		ListeFichiers->Add(ExpandFileName(Infos_fichier.Name));
 		//nettoie le nom de fichier de son extension sb2 pour le nom seul du fichier, sans le chemin
 		AnsiString CleanName = StringReplace(Infos_fichier.Name, ".sb2", "",TReplaceFlags() << rfReplaceAll);
-		//rajout d'entrées dans le menu
+		//rajout d'entrÃ©es dans le menu
 		NewItem = new TMenuItem(this);
 		NewItem->Caption = CleanName;
 		NewItem->Name = CleanName;
 		//stockage du chemin complet + nom de fichier pour la fonction ExempleClick
 		NewItem->Hint = FilePath + Infos_fichier.Name.c_str();
 		NewItem->OnClick=ExempleClick;
-		//rajout au bon endroit de l'entrée dans le menu
+		//rajout au bon endroit de l'entrÃ©e dans le menu
 		MainMenu1->Items->Items[0]->Items[RangMenu]->Add(NewItem);
 	  }
 	}
@@ -122,16 +122,16 @@ void __fastcall TInterfaceS2A::SearchEx(AnsiString FilePath, TStringList * Exten
   while(!FindNext(Infos_fichier));
   FindClose(Infos_fichier);
 }
-//---------------------associer chaque entrée dynamique dans Biblio & Exemples à leur lancement-------------------
+//---------------------associer chaque entrÃ©e dynamique dans Biblio & Exemples Ã  leur lancement-------------------
 void __fastcall TInterfaceS2A::ExempleClick(TObject *Sender)
 {
 AnsiString CheminNomFichier;
-ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en Ã©criture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
-			   //récupération des infos de l'entrée TMenu qui a déclenché cette fonction
+			   //rÃ©cupÃ©ration des infos de l'entrÃ©e TMenu qui a dÃ©clenchÃ© cette fonction
 			   CheminNomFichier=static_cast<TMenuItem*>(Sender)->Hint;
-			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
+			   fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork crÃ©Ã©s par SÃ©bastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << CheminNomFichier.c_str() << '"';
 			   fichier_s2.close();
 		}
 		else ShowMessage(Popup->Items->Strings[0]);
@@ -149,18 +149,18 @@ void __fastcall TInterfaceS2A::SearchDocs(AnsiString FilePath, TStringList * Ext
 	{
 	  if (ExtractFileExt(Infos_fichier.Name).LowerCase() == Extensions->Strings[i].LowerCase())
 	  {
-		//ajout dans la liste d'une ligne avec le chemin+nom du fichier trouvé
+		//ajout dans la liste d'une ligne avec le chemin+nom du fichier trouvÃ©
 		ListeFichiers->Add(ExpandFileName(Infos_fichier.Name));
 		//nettoie le nom de fichier de son extension pour le nom seul du fichier, sans le chemin
 		AnsiString CleanName = StringReplace(Infos_fichier.Name, Extensions->Strings[i].LowerCase(), "",TReplaceFlags() << rfReplaceAll);
-		//rajout d'entrées dans le menu
+		//rajout d'entrÃ©es dans le menu
 		NewItem = new TMenuItem(this);
 		NewItem->Caption = Infos_fichier.Name;
 		NewItem->Name = CleanName;
 		//stockage du chemin complet + nom de fichier pour la fonction ExempleClick
 		NewItem->Hint = FilePath + Infos_fichier.Name.c_str();
 		NewItem->OnClick=DocsClick;
-		//rajout au bon endroit de l'entrée dans le menu
+		//rajout au bon endroit de l'entrÃ©e dans le menu
 		MainMenu1->Items->Items[RangMenu]->Add(NewItem);
 	  }
 	}
@@ -168,10 +168,10 @@ void __fastcall TInterfaceS2A::SearchDocs(AnsiString FilePath, TStringList * Ext
   while(!FindNext(Infos_fichier));
   FindClose(Infos_fichier);
 }
-//---------------------associer chaque entrée dynamique dans Biblio & Exemples à leur lancement-------------------
+//---------------------associer chaque entrÃ©e dynamique dans Biblio & Exemples Ã  leur lancement-------------------
 void __fastcall TInterfaceS2A::DocsClick(TObject *Sender)
 {
-//récupération des infos de l'entrée TMenu qui a déclenché cette fonction
+//rÃ©cupÃ©ration des infos de l'entrÃ©e TMenu qui a dÃ©clenchÃ© cette fonction
 AnsiString CheminNomFichier=static_cast<TMenuItem*>(Sender)->Hint;
 
 ShellExecute(0, 0, CheminNomFichier.c_str(), 0, 0 , SW_HIDE );
@@ -187,7 +187,7 @@ void __fastcall TInterfaceS2A::Siteofficieldes2a1Click(TObject *Sender)
 ShellExecute(0, 0, "http://mryslab.blogspot.fr/", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
-void __fastcall TInterfaceS2A::AllerplusloinBlocklyDuino1Click(TObject *Sender)
+void __fastcall TInterfaceS2A::BlocklyArduinoClick(TObject *Sender)
 {
 ShellExecute(0, 0, "http://www.technologiescollege.fr/blockly@rduino", 0, 0 , SW_SHOW );
 }
@@ -224,10 +224,10 @@ ShellExecute(0, 0, "http://scratch.mit.edu/projects/editor/", 0, 0 , SW_SHOW );
 //---------------------------------------------------------------------------
 void __fastcall TInterfaceS2A::Button2Click(TObject *Sender)
 {
-ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2("scratch2.bat", ios::out | ios::trunc);  // ouverture en Ã©criture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
-				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << locate_librairie.c_str() << "fichier_depart_s2a.sb2" << '"' ;
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork crÃ©Ã©s par SÃ©bastien CANET\ncls\nSET currentpath=%~dp1\nSET dossier_scratch="<< '"' << locate_scratch2.c_str() << '"'<< "\nstart %dossier_scratch% " << '"' << locate_librairie.c_str() << "fichier_depart_s2a.sb2" << '"' ;
 				fichier_s2.close();
 		}
 		else ShowMessage(Popup->Items->Strings[1]);
@@ -238,10 +238,10 @@ void __fastcall TInterfaceS2A::Button1Click(TObject *Sender)
 {
 port=this->Edit1->Text.ToInt();
 INI->WriteInteger("port COM", "port", port);
-ofstream fichier_s2a("s2a_cmd.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2a("s2a_cmd.bat", ios::out | ios::trunc);  // ouverture en Ã©criture avec effacement du fichier ouvert
 		if(fichier_s2a)
 		{
-				fichier_s2a << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%s2a\ncls\n.\\Python\\python.exe s2a.py COM" << port;
+				fichier_s2a << "@echo off\nbreak ON\nrem fichiers BAT et fork crÃ©Ã©s par SÃ©bastien CANET\nSET currentpath=%~dp1\ncd %currentpath%s2a\ncls\n.\\Python\\python.exe s2a.py COM" << port;
 				fichier_s2a.close();
 		}
 		else ShowMessage(Popup->Items->Strings[2]);
@@ -256,7 +256,7 @@ InterfaceS2A->Close();
 void __fastcall TInterfaceS2A::OuvrirClick(TObject *Sender)
 {
 if (Open_s2->Execute()==true) locate_scratch2=Open_s2->FileName.c_str();
-//écriture dans le fichier INI
+//Ã©criture dans le fichier INI
 //DeleteKey("locate Scratch2", "locate_scratch2");
 INI->WriteString("locate Scratch2", "locate_scratch2", locate_scratch2);
 }
@@ -297,7 +297,7 @@ DeleteFile("s2a.ini");
 InitINI();
 //nettoie le champ du TEdit et y place la valeur lue dans le INI
 Edit1->Clear();
-//procédure de contrôle si le fichier INI est mal rempli
+//procÃ©dure de contrÃ´le si le fichier INI est mal rempli
 port=INI->ReadInteger("port COM", "port", 3);
 Edit1->Text=IntToStr(port);
 }
@@ -317,7 +317,7 @@ ShellExecute(0, 0, "https://github.com/technologiescollege/drivers", 0, 0 , SW_S
 void __fastcall TInterfaceS2A::Localiserledossierexemples1Click(TObject *Sender)
 {
 if (OpenDialog->Execute()==true) locate_librairie=ExtractFilePath(OpenDialog->FileName);
-//écriture dans le fichier INI
+//Ã©criture dans le fichier INI
 INI->WriteString("locate Librairie", "locate_librairie", locate_librairie);
 }
 //---------------------------------------------------------------------------
@@ -325,7 +325,7 @@ INI->WriteString("locate Librairie", "locate_librairie", locate_librairie);
 void __fastcall TInterfaceS2A::Localiserledossierprojets1Click(TObject *Sender)
 {
 if (OpenDialog->Execute()==true) locate_project=ExtractFilePath(OpenDialog->FileName);
-//écriture dans le fichier INI
+//Ã©criture dans le fichier INI
 INI->WriteString("locate Project", "locate_project", locate_project);
 }
 //---------------------------------------------------------------------------
@@ -334,7 +334,7 @@ void __fastcall TInterfaceS2A::Localiserledossierdocumentation1Click(
       TObject *Sender)
 {
 if (OpenDialog->Execute()==true) locate_doc=ExtractFilePath(OpenDialog->FileName);
-//écriture dans le fichier INI
+//Ã©criture dans le fichier INI
 INI->WriteString("locate Documentation", "locate_doc", locate_doc);
 }
 //---------------------------------------------------------------------------
@@ -342,10 +342,10 @@ void __fastcall TInterfaceS2A::Firmata_UnoClick(TObject *Sender)
 {
 port=this->Edit1->Text.ToInt();
 INI->WriteInteger("port COM", "port", port);
-ofstream fichier_s2("flash_uno.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2("flash_uno.bat", ios::out | ios::trunc);  // ouverture en Ã©criture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
-				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega328p -carduino -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Uno.hex:i" << "\npause";
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork crÃ©Ã©s par SÃ©bastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega328p -carduino -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Uno.hex:i" << "\npause";
 				fichier_s2.close();
 		}
 		else ShowMessage(Popup->Items->Strings[1]);
@@ -353,19 +353,36 @@ ShellExecute(0, 0, "flash_uno.bat", 0, 0 , SW_SHOW );
 }
 //---------------------------------------------------------------------------
 
-
 void __fastcall TInterfaceS2A::Firmata_MegaClick(TObject *Sender)
 {
 port=this->Edit1->Text.ToInt();
 INI->WriteInteger("port COM", "port", port);
-ofstream fichier_s2("flash_mega.bat", ios::out | ios::trunc);  // ouverture en écriture avec effacement du fichier ouvert
+ofstream fichier_s2("flash_mega.bat", ios::out | ios::trunc);  // ouverture en Ã©criture avec effacement du fichier ouvert
 		if(fichier_s2)
 		{
-				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork créés par Sébastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega2560 -cwiring -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Mega.hex:i" << "\npause";
+				fichier_s2 << "@echo off\nbreak ON\nrem fichiers BAT et fork crÃ©Ã©s par SÃ©bastien CANET\nSET currentpath=%~dp1\ncd %currentpath%tools\ncls\n.\\avrdude -Cavrdude.conf -v -patmega2560 -cwiring -P\\" << "\\" << ".\\COM" << port << " -b115200 -D -V -Uflash:w:s2a-FirmataPlus.Mega.hex:i" << "\npause";
 				fichier_s2.close();
 		}
 		else ShowMessage(Popup->Items->Strings[1]);
 ShellExecute(0, 0, "flash_mega.bat", 0, 0 , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceS2A::w32Click(TObject *Sender)
+{
+ShellExecute(0, 0, "dpinst-x86.exe", 0, (ExtractFilePath(Application->ExeName) + "drivers").c_str() , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceS2A::w64Click(TObject *Sender)
+{
+ShellExecute(0, 0, "dpinst-amd64.exe", 0, (ExtractFilePath(Application->ExeName) + "drivers").c_str() , SW_SHOW );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TInterfaceS2A::DriversClick(TObject *Sender)
+{
+ShellExecute(0, 0, "explorer.exe", (ExtractFilePath(Application->ExeName) + "drivers").c_str(), 0, SW_SHOW );
 }
 //---------------------------------------------------------------------------
 

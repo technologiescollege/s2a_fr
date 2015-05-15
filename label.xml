@@ -16,9 +16,9 @@
   <Labels>
     <Popup type="TComboBox">
       <Items>
-        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2 - mai 2015</FR>
-        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2 - mai 2015</EN>
-		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2 - mai 2015</ES>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.2.1 - mai 2015</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2.1 - mai 2015</EN>
+		<ES>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.2.1 - mai 2015</ES>
       </Items>
     </Popup>
     <FenetrePrincipale type="TFenetrePrincipale">
@@ -154,34 +154,90 @@
 				<ES>Gestion de p&eriféricos</ES>
 			  </Caption>
 			</Gestionnairedepriphriques1>
-			<Ouvrir type="TMenuItem">
+			<InstallDriver type="TMenuItem">
 			  <Caption>
-				<FR>&Localiser Scratch 2</FR>
-				<EN>&Locate Scratch2</EN>
-				<ES>&Localizar Scratch2</ES>
+				<FR>&Installer les pilotes</FR>
+				<EN>&Install drivers</EN>
+				<ES>&Install drivers</ES>
 			  </Caption>
-			</Ouvrir>
-			<Localiserledossierexemples1 type="TMenuItem">
+			</InstallDriver>
+					<w32 type="TMenuItem">
+					  <Caption>
+						<FR>&Windows 32bits x86</FR>
+						<EN>&Windows 32bits x86</EN>
+						<ES>&Windows 32bits x86</ES>
+					  </Caption>
+					</w32>
+					<w64 type="TMenuItem">
+					  <Caption>
+						<FR>&Windows 64bits x64</FR>
+						<EN>&Windows 64bits x64</EN>
+						<ES>&Windows 64bits x64</ES>
+					  </Caption>
+					</w64>
+			<Firmata type="TMenuItem">
 			  <Caption>
-				<FR>Localiser le dossier 'bibliothèque'</FR>
-				<EN>Locate folder 'librairie'</EN>
-				<ES>Localizar carpeta de 'librerias'</ES>
+				<FR>&Téléverser 'FirmataPlus' dans une carte</FR>
+				<EN>&Upload 'FirmataPlus'</EN>
+				<ES>&Upload 'FirmataPlus'</ES>
 			  </Caption>
-			</Localiserledossierexemples1>
-			<Localiserledossierprojets1 type="TMenuItem">
+			</Firmata>	
+					<Firmata_Uno type="TMenuItem">
+					  <Caption>
+						<FR>Arduino Uno</FR>
+						<EN>Arduino Uno</EN>
+						<ES>Arduino Uno</ES>
+					  </Caption>
+					</Firmata_Uno>	
+					<Firmata_Mega type="TMenuItem">
+					  <Caption>
+						<FR>Arduino Mega (2560)</FR>
+						<EN>Arduino Mega (2560)</EN>
+						<ES>Arduino Mega (2560)</ES>
+					  </Caption>
+					</Firmata_Mega>
+			<Locate type="TMenuItem">
 			  <Caption>
-				<FR>Localiser le dossier 'projets'</FR>
-				<EN>Locate folder 'project'</EN>
-				<ES>Localizar carpeta de 'proyectos'</ES>
+				<FR>&Localiser les dossiers</FR>
+				<EN>&Locate folders</EN>
+				<ES>&Locate folders</ES>
 			  </Caption>
-			</Localiserledossierprojets1>
-			<Localiserledossierdocumentation1 type="TMenuItem">
-			  <Caption>
-				<FR>Localiser le dossier 'documentation'</FR>
-				<EN>Locate folder 'documentation'</EN>
-				<ES>Localizar carpeta de 'documentacion'</ES>
-			  </Caption>
-			</Localiserledossierdocumentation1>
+			</Locate>
+					<Ouvrir type="TMenuItem">
+					  <Caption>
+						<FR>Localiser Scratch 2</FR>
+						<EN>Locate Scratch2</EN>
+						<ES>Localizar Scratch2</ES>
+					  </Caption>
+					</Ouvrir>
+					<Localiserledossierexemples1 type="TMenuItem">
+					  <Caption>
+						<FR>Localiser le dossier 'bibliothèque'</FR>
+						<EN>Locate folder 'librairie'</EN>
+						<ES>Localizar carpeta de 'librerias'</ES>
+					  </Caption>
+					</Localiserledossierexemples1>
+					<Localiserledossierprojets1 type="TMenuItem">
+					  <Caption>
+						<FR>Localiser le dossier 'projets'</FR>
+						<EN>Locate folder 'project'</EN>
+						<ES>Localizar carpeta de 'proyectos'</ES>
+					  </Caption>
+					</Localiserledossierprojets1>
+					<Localiserledossierdocumentation1 type="TMenuItem">
+					  <Caption>
+						<FR>Localiser le dossier 'documentation'</FR>
+						<EN>Locate folder 'documentation'</EN>
+						<ES>Localizar carpeta de 'documentacion'</ES>
+					  </Caption>
+					</Localiserledossierdocumentation1>
+					<Drivers type="TMenuItem">
+					  <Caption>
+						<FR>Ouvrir le dossier 'pilotes'</FR>
+						<EN>Open 'drivers' folder</EN>
+						<ES>Open 'drivers' folder</ES>
+					  </Caption>
+					</Drivers>
 			<Init type="TMenuItem">
 			  <Caption>
 				<FR>Réinitialiser les p&aramètres</FR>
@@ -189,27 +245,6 @@
 				<ES>Inicializar los p&arametros</ES>
 			  </Caption>
 			</Init>		
-			<Firmata type="TMenuItem">
-			  <Caption>
-				<FR>Téléverser 'FirmataPlus' dans une carte</FR>
-				<EN>Upload 'FirmataPlus'</EN>
-				<ES>Upload 'FirmataPlus'</ES>
-			  </Caption>
-			</Firmata>	
-				<Firmata_Uno type="TMenuItem">
-				  <Caption>
-					<FR>Arduino Uno</FR>
-					<EN>Arduino Uno</EN>
-					<ES>Arduino Uno</ES>
-				  </Caption>
-				</Firmata_Uno>	
-				<Firmata_Mega type="TMenuItem">
-				  <Caption>
-					<FR>Arduino Mega (2560)</FR>
-					<EN>Arduino Mega (2560)</EN>
-					<ES>Arduino Mega (2560)</ES>
-				  </Caption>
-				</Firmata_Mega>	
     <Documentation1 type="TMenuItem">
       <Caption>
         <FR>&Documentation</FR>
@@ -217,6 +252,20 @@
         <ES>&Documentacion</ES>
       </Caption>
     </Documentation1>
+    <BlocklyArduino type="TMenuItem">
+      <Caption>
+        <FR>Aller plus loin avec &Blockly@rduino</FR>
+        <EN>Go furthermore with &Blockly@rduino</EN>
+        <ES>Ademas con &Blockly@rduino</ES>
+      </Caption>
+    </BlocklyArduino>
+    <Aide1 type="TMenuItem">
+      <Caption>
+        <FR>&Aide</FR>
+        <EN>&Help</EN>
+        <ES>&Ayuda</ES>
+      </Caption>
+    </Aide1>
 			<PrparerArduino1 type="TMenuItem">
 			  <Caption>
 				<FR>&1. Préparer la carte Arduino</FR>
@@ -245,55 +294,48 @@
 				<ES>&4. Aviso de ordenes</ES>
 			  </Caption>
 			</N3Mmentodescommandes1>
-    <AllerplusloinBlocklyDuino1 type="TMenuItem">
-      <Caption>
-        <FR>Aller plus loin avec &Blockly@rduino</FR>
-        <EN>&Go furthermore with Blockly@rduino</EN>
-        <ES>Ademas con &Blockly@rduino</ES>
-      </Caption>
-    </AllerplusloinBlocklyDuino1>
-    <Aide1 type="TMenuItem">
-      <Caption>
-        <FR>&Aide</FR>
-        <EN>&Help</EN>
-        <ES>&Ayuda</ES>
-      </Caption>
-    </Aide1>
-			<Wiki1 type="TMenuItem">
+			<Links type="TMenuItem">
 			  <Caption>
-				<FR>Wiki</FR>
-				<EN>Wiki</EN>
-				<ES>Wiki</ES>
+				<FR>&Liens</FR>
+				<EN>&Links</EN>
+				<ES>&Links</ES>
 			  </Caption>
-			</Wiki1>
-			<A_propos type="TMenuItem">
-			  <Caption>
-				<FR>Fichiers source</FR>
-				<EN>Github file</EN>
-				<ES>Ficheros fuente</ES>
-			  </Caption>
-			</A_propos>
-			<Siteofficieldes2a1 type="TMenuItem">
-			  <Caption>
-				<FR>Site officiel de s2a</FR>
-				<EN>s2a official site</EN>
-				<ES>Sitio oficial de s2a</ES>
-			  </Caption>
-			</Siteofficieldes2a1>
-			<SiteofficielArduino1 type="TMenuItem">
-			  <Caption>
-				<FR>Site officiel Arduino</FR>
-				<EN>Arduino official site</EN>
-				<ES>Sitio oficial de Arduino</ES>
-			  </Caption>
-			</SiteofficielArduino1>
-			<lchargerlesdrivers1 type="TMenuItem">
-			  <Caption>
-				<FR>Télécharger les drivers</FR>
-				<EN>Download Arduino drivers</EN>
-				<ES>Cargar drivers de Arduino</ES>
-			  </Caption>
-			</lchargerlesdrivers1>
+			</Links>
+					<Wiki1 type="TMenuItem">
+					  <Caption>
+						<FR>Wiki</FR>
+						<EN>Wiki</EN>
+						<ES>Wiki</ES>
+					  </Caption>
+					</Wiki1>
+					<A_propos type="TMenuItem">
+					  <Caption>
+						<FR>Fichiers source</FR>
+						<EN>Github file</EN>
+						<ES>Ficheros fuente</ES>
+					  </Caption>
+					</A_propos>
+					<Siteofficieldes2a1 type="TMenuItem">
+					  <Caption>
+						<FR>Site officiel de s2a</FR>
+						<EN>s2a official site</EN>
+						<ES>Sitio oficial de s2a</ES>
+					  </Caption>
+					</Siteofficieldes2a1>
+					<SiteofficielArduino1 type="TMenuItem">
+					  <Caption>
+						<FR>Site officiel Arduino</FR>
+						<EN>Arduino official site</EN>
+						<ES>Sitio oficial de Arduino</ES>
+					  </Caption>
+					</SiteofficielArduino1>
+					<lchargerlesdrivers1 type="TMenuItem">
+					  <Caption>
+						<FR>Télécharger les pilotes</FR>
+						<EN>Download Arduino drivers</EN>
+						<ES>Cargar drivers de Arduino</ES>
+					  </Caption>
+					</lchargerlesdrivers1>
 			<Apropos1 type="TMenuItem">
 			  <Caption>
 				<FR>A propos</FR>

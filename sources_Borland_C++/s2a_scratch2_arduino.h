@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+ï»¿//---------------------------------------------------------------------------
 
 #ifndef s2aH
 #define s2aH
@@ -19,7 +19,7 @@
 
 class TInterfaceS2A : public TForm
 {
-__published:	// Composants gérés par l'EDI
+__published:	// Composants gÃ©rÃ©s par l'EDI
 	TMainMenu *MainMenu1;
 	TMenuItem *Quitter1;
 	TMenuItem *A_propos;
@@ -32,7 +32,7 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Label2;
 	TLabel *Label3;
 	TEdit *Edit1;
-	TMenuItem *AllerplusloinBlocklyDuino1;
+	TMenuItem *BlocklyArduino;
 	TMenuItem *Wiki1;
 	TMenuItem *Documentation1;
 	TMenuItem *PrparerArduino1;
@@ -56,23 +56,28 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *Bibliothque;
 	TMenuItem *Langue1;
 	TMenuItem *N4;
-	TMenuItem *N5;
 	TMenuItem *Init;
 	TMenuItem *SiteofficielArduino1;
-	TMenuItem *lchargerlesdrivers1;
 	TMenuItem *Localiserledossierexemples1;
 	TMenuItem *N6;
 	TMenuItem *Localiserledossierprojets1;
 	TMenuItem *Localiserledossierdocumentation1;
 	TOpenDialog *OpenDialog;
 	TComboBox *Popup;
-	TMenuItem *N7;
 	TMenuItem *Firmata;
 	TMenuItem *Firmata_Uno;
 	TMenuItem *Firmata_Mega;
+	TMenuItem *Links;
+	TMenuItem *Locate;
+	TMenuItem *InstallDriver;
+	TMenuItem *w32;
+	TMenuItem *w64;
+	TMenuItem *lchargerlesdrivers1;
+	TMenuItem *N5;
+	TMenuItem *Drivers;
 	void __fastcall InitINI();
 	void __fastcall A_proposClick(TObject *Sender);
-	void __fastcall AllerplusloinBlocklyDuino1Click(TObject *Sender);
+	void __fastcall BlocklyArduinoClick(TObject *Sender);
 	void __fastcall PrparerArduino1Click(TObject *Sender);
 	void __fastcall Utilisation1Click(TObject *Sender);
 	void __fastcall N3Mmentodescommandes1Click(TObject *Sender);
@@ -99,7 +104,10 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall Localiserledossierdocumentation1Click(TObject *Sender);
 	void __fastcall Firmata_UnoClick(TObject *Sender);
 	void __fastcall Firmata_MegaClick(TObject *Sender);
-private:	// Déclarations de l'utilisateur
+	void __fastcall w32Click(TObject *Sender);
+	void __fastcall w64Click(TObject *Sender);
+	void __fastcall DriversClick(TObject *Sender);
+private:	// DÃ©clarations de l'utilisateur
 	TLabel * interLabel ;
 	TButton * interButton ;
 	TInterfaceS2A * interInterfaceS2A ;
@@ -109,7 +117,7 @@ private:	// Déclarations de l'utilisateur
 	TRadioGroup * interRadioGroupe ;
 	TMenuItem * interMenuItem ;
 	GestionLangue * langue;
-public:		// Déclarations de l'utilisateur
+public:		// DÃ©clarations de l'utilisateur
 	void __fastcall Langue1Click(TObject *Sender);
 	__fastcall TInterfaceS2A(TComponent* Owner);
 };
