@@ -1,6 +1,6 @@
 s2a
 ====
-International : FR / EN / ES (_thanks to José Manuel Ruiz_)
+International : FR / EN / ES (_thanks to Manuel José Ruiz_)
 
 ![](https://github.com/technologiescollege/s2a_fr/raw/portable/aide/s2a_exe.jpg)
 ![](http://4.bp.blogspot.com/-OeTOatZa9y4/Uy1Ztrg3FRI/AAAAAAAAU70/uuGvQE6UmLM/s1600/instrusion.png)
@@ -37,9 +37,14 @@ Vous trouverez dans le dossier Documentation tous les détails, et dans le sous 
 
 _In the folder "Documentation" you will find all the details and in the sub folder "Approfondissement" you will find the reference book as well as the documentations on the additional units (PyMata and PySerial)._
 
+Version 2.2.1 du 16 mai 2015
+------------------------
+Installation des pilotes (32 & 64 bits) depuis le menu 'Outils'.
+Ouverture du dossier 'drivers' depuis Outils > Localiser.
+
 Version 2.2.0 du 14 mai 2015
 ------------------------
-Téléversement de FirmataPlus depuis le menu 'Outils'.
+Téléversement de FirmataPlus depuis le menu 'Outils', pour Uno & Mega.
 
 Version 2.1.1 du 8 mai 2015
 ------------------------
