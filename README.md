@@ -1,4 +1,4 @@
-s2a
+s2a - panneau de contrôle
 ====
 International : FR / EN / ES (_thanks to Manuel José Ruiz_)
 
