@@ -14,9 +14,9 @@ Des traductions des blocs Scratch sont aussi accessibles en chinois, hollandais,
 
 _**Arduino's users!** Would you like to configure and control your Arduino micro-controller without having to write a single Arduino code line and at the same time having access to a graphic interface?_
 
-**Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec une carte Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des éléments électroniques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
+**Utilisateurs de Snap! et Scratch !** Voudriez-vous contrôler et communiquer avec _**une**_ carte Arduino ? Imaginez-vous, en utilisant Scratch ou Snap!, contrôler des éléments électroniques comme des DELS, des moteurs et des relais en captant les valeurs de dispositifs, comme des capteurs de température, des potentiomètres et des capteurs de lumière. Que créeriez-vous ?
 
-_**Snap and Scratch's users!** Would you like to control and communicate with Arduino cards? Suppose while using Scartch or Snap, you can control electonic items such as LED, motor getting the device values, like temperature sensor, potentiometer or light sensor. What would you create?_
+_**Snap and Scratch's users!** Would you like to control and communicate with _**one**_ Arduino cards? Suppose while using Scartch or Snap, you can control electonic items such as LED, motor getting the device values, like temperature sensor, potentiometer or light sensor. What would you create?_
 
 **Ne cherchez plus, s2a est là !**
 
