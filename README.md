@@ -37,6 +37,10 @@ Vous trouverez dans le dossier Documentation tous les détails, et dans le sous 
 
 _In the folder "Documentation" you will find all the details and in the sub folder "Approfondissement" you will find the reference book as well as the documentations on the additional units (PyMata and PySerial)._
 
+Version 2.3 du 26 mai 2015
+------------------------
+**Détection automatique de cartes Arduino**, tout en laissant la possibilité de modifier à la main le port COM.
+
 Version 2.2.1 du 16 mai 2015
 ------------------------
 Installation des pilotes (32 & 64 bits) depuis le menu 'Outils'.
