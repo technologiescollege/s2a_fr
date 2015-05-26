@@ -94,12 +94,13 @@
           <property category="win32.*.win32b.bcc32" name="option.H=.arg.merge" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.H=.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.Hc.enabled" value="1"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="..\Xi"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="$(BDS)\include"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="$(BDS)\include\dinkumware"/>
-          <property category="win32.*.win32b.bcc32" name="option.I.arg.6" value="$(BDS)\include\vcl"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.4" value="..\Xi"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.5" value="$(BDS)\include"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.6" value="$(BDS)\include\dinkumware"/>
+          <property category="win32.*.win32b.bcc32" name="option.I.arg.7" value="$(BDS)\include\vcl"/>
           <property category="win32.*.win32b.bcc32" name="option.I.arg.merge" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.I.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.O.enabled" value="1"/>
@@ -131,44 +132,53 @@
           <property category="win32.*.win32b.bcc32" name="option.tWC.enabled" value="0"/>
           <property category="win32.*.win32b.bcc32" name="option.tWD.enabled" value="0"/>
           <property category="win32.*.win32b.bcc32" name="option.tWM.enabled" value="1"/>
-          <property category="win32.*.win32b.dcc32" name="option.I.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.dcc32" name="option.I.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.dcc32" name="option.I.arg.3" value="..\Xi"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.dcc32" name="option.I.arg.4" value="..\Xi"/>
           <property category="win32.*.win32b.dcc32" name="option.I.arg.merge" value="1"/>
           <property category="win32.*.win32b.dcc32" name="option.I.enabled" value="0"/>
-          <property category="win32.*.win32b.dcc32" name="option.O.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.dcc32" name="option.O.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.dcc32" name="option.O.arg.3" value="..\Xi"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.dcc32" name="option.O.arg.4" value="..\Xi"/>
           <property category="win32.*.win32b.dcc32" name="option.O.arg.merge" value="1"/>
           <property category="win32.*.win32b.dcc32" name="option.O.enabled" value="0"/>
-          <property category="win32.*.win32b.dcc32" name="option.R.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.dcc32" name="option.R.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.dcc32" name="option.R.arg.3" value="..\Xi"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.dcc32" name="option.R.arg.4" value="..\Xi"/>
           <property category="win32.*.win32b.dcc32" name="option.R.arg.merge" value="1"/>
           <property category="win32.*.win32b.dcc32" name="option.R.enabled" value="0"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.3" value="..\Xi"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.4" value="..\Projets Borland Studio"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.5" value="$(BDS)\lib"/>
-          <property category="win32.*.win32b.dcc32" name="option.U.arg.6" value="$(BDS)\lib\obj"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.4" value="..\Xi"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.5" value="..\Projets Borland Studio"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.6" value="$(BDS)\lib"/>
+          <property category="win32.*.win32b.dcc32" name="option.U.arg.7" value="$(BDS)\lib\obj"/>
           <property category="win32.*.win32b.dcc32" name="option.U.arg.merge" value="1"/>
           <property category="win32.*.win32b.dcc32" name="option.U.enabled" value="1"/>
           <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
-          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.3" value="..\Xi"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.idl2cpp" name="option.I.arg.4" value="..\Xi"/>
           <property category="win32.*.win32b.idl2cpp" name="option.I.arg.merge" value="1"/>
           <property category="win32.*.win32b.idl2cpp" name="option.I.enabled" value="1"/>
           <property category="win32.*.win32b.ilink32" name="container.SelectedWarnings.containerenabled" value="1"/>
           <property category="win32.*.win32b.ilink32" name="option.-w-.enabled" value="0"/>
           <property category="win32.*.win32b.ilink32" name="option.Gi.enabled" value="0"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.3" value="..\Xi"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.4" value="$(BDS)\lib"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.5" value="$(BDS)\lib\obj"/>
-          <property category="win32.*.win32b.ilink32" name="option.L.arg.6" value="$(BDS)\lib\psdk"/>
+          <property category="win32.*.win32b.ilink32" name="option.Gl.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.Gpd.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.Gpr.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.4" value="..\Xi"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.5" value="$(BDS)\lib"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.6" value="$(BDS)\lib\obj"/>
+          <property category="win32.*.win32b.ilink32" name="option.L.arg.7" value="$(BDS)\lib\psdk"/>
           <property category="win32.*.win32b.ilink32" name="option.L.arg.merge" value="1"/>
           <property category="win32.*.win32b.ilink32" name="option.L.enabled" value="1"/>
           <property category="win32.*.win32b.ilink32" name="option.Tpd.enabled" value="0"/>
@@ -177,11 +187,17 @@
           <property category="win32.*.win32b.ilink32" name="option.aa.enabled" value="1"/>
           <property category="win32.*.win32b.ilink32" name="option.ap.enabled" value="0"/>
           <property category="win32.*.win32b.ilink32" name="option.dynamicrtl.enabled" value="0"/>
-          <property category="win32.*.win32b.ilink32" name="option.j.arg.1" value="tinyxml"/>
-          <property category="win32.*.win32b.ilink32" name="option.j.arg.2" value="..\s2a"/>
-          <property category="win32.*.win32b.ilink32" name="option.j.arg.3" value="..\Xi"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.1" value="LibSerialPort"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.2" value="tinyxml"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.3" value="..\s2a"/>
+          <property category="win32.*.win32b.ilink32" name="option.j.arg.4" value="..\Xi"/>
           <property category="win32.*.win32b.ilink32" name="option.j.arg.merge" value="1"/>
           <property category="win32.*.win32b.ilink32" name="option.j.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.l.arg.merge" value="1"/>
+          <property category="win32.*.win32b.ilink32" name="option.l.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.m.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.map_segments.enabled" value="0"/>
+          <property category="win32.*.win32b.ilink32" name="option.s.enabled" value="0"/>
           <property category="win32.*.win32b.ilink32" name="option.v.enabled" value="0"/>
           <property category="win32.*.win32b.ilink32" name="option.w.enabled" value="0"/>
           <property category="win32.*.win32b.ilink32" name="param.libfiles.1" value="$(LIBRARIES)"/>
@@ -199,20 +215,21 @@
         <FILE FILENAME="s2a.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="s2a" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="s2a.res" CONTAINERID="ResTool" LOCALCOMMAND="" UNITNAME="s2a.res" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="s2a_scratch2_arduino.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="s2a_scratch2_arduino" FORMNAME="InterfaceS2A" DESIGNCLASS="" ADDITIONAL="s2a_scratch2_arduino.h"/>
-        <FILE FILENAME="tinyxml\tinyxml.h" CONTAINERID="" LOCALCOMMAND="" UNITNAME="" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="GestionLangue.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="GestionLangue" FORMNAME="" DESIGNCLASS="" ADDITIONAL="GestionLangue.h"/>
+        <FILE FILENAME="tinyxml\tinyxml.h" CONTAINERID="" LOCALCOMMAND="" UNITNAME="" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="tinyxml\tinyxml.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="tinyxml" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="tinyxml\tinystr.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="tinystr" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="tinyxml\tinyxmlerror.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="tinyxmlerror" FORMNAME="" DESIGNCLASS=""/>
         <FILE FILENAME="tinyxml\tinyxmlparser.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="tinyxmlparser" FORMNAME="" DESIGNCLASS=""/>
+        <FILE FILENAME="Detect.cpp" CONTAINERID="CCompiler" LOCALCOMMAND="" UNITNAME="Detect" FORMNAME="" DESIGNCLASS="" ADDITIONAL="Detect.h"/>
       </FILELIST>
       <IDEOPTIONS>
         <VersionInfo>
           <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
           <VersionInfo Name="AutoIncBuild">False</VersionInfo>
           <VersionInfo Name="MajorVer">2</VersionInfo>
-          <VersionInfo Name="MinorVer">2</VersionInfo>
-          <VersionInfo Name="Release">1</VersionInfo>
+          <VersionInfo Name="MinorVer">3</VersionInfo>
+          <VersionInfo Name="Release">0</VersionInfo>
           <VersionInfo Name="Build">0</VersionInfo>
           <VersionInfo Name="Debug">False</VersionInfo>
           <VersionInfo Name="PreRelease">False</VersionInfo>
@@ -225,13 +242,13 @@
         <VersionInfoKeys>
           <VersionInfoKeys Name="CompanyName">WorldCompany</VersionInfoKeys>
           <VersionInfoKeys Name="FileDescription">s2a</VersionInfoKeys>
-          <VersionInfoKeys Name="FileVersion">2.2.1.0</VersionInfoKeys>
+          <VersionInfoKeys Name="FileVersion">2.3.0.0</VersionInfoKeys>
           <VersionInfoKeys Name="InternalName">s2a</VersionInfoKeys>
           <VersionInfoKeys Name="LegalCopyright">Sébastien Canet</VersionInfoKeys>
           <VersionInfoKeys Name="LegalTrademarks">CC-BY-NC-ND</VersionInfoKeys>
           <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
           <VersionInfoKeys Name="ProductName">Lien Scratch2 &lt;-&gt; s2a &lt;-&gt; Arduino</VersionInfoKeys>
-          <VersionInfoKeys Name="ProductVersion">2.2.1</VersionInfoKeys>
+          <VersionInfoKeys Name="ProductVersion">2.3</VersionInfoKeys>
           <VersionInfoKeys Name="Comments">Lien Scratch2 &lt;-&gt; s2a &lt;-&gt; Arduino</VersionInfoKeys>
         </VersionInfoKeys>
         <Debugging>

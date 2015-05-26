@@ -13,5 +13,13 @@
     <Transaction>2014/12/07 23:58:41.020.bdsproj,F:\ZZZzzz\s2a\s2a.bdsproj=F:\ZZZzzz\s2a\s2a.bdsproj</Transaction>
     <Transaction>2014/12/18 02:19:17.653.cpp,F:\ZZZzzz\Projets Borland Studio\s2a\Unit1.cpp=F:\ZZZzzz\Projets Borland Studio\s2a\s2a_fichiers.cpp</Transaction>
     <Transaction>2014/12/18 02:19:17.653.h,F:\ZZZzzz\Projets Borland Studio\s2a\Unit1.h=F:\ZZZzzz\Projets Borland Studio\s2a\s2a_fichiers.h</Transaction>
+    <Transaction>2015/05/16 16:44:05.120.c,F:\ZZZzzz\Projets Borland Studio\s2a\File1.c=F:\ZZZzzz\Projets Borland Studio\s2a\detectArduino.c</Transaction>
+    <Transaction>2015/05/21 02:49:12.718.c,F:\ZZZzzz\Projets Borland Studio\s2a\detectArduino.c=</Transaction>
+    <Transaction>2015/05/25 02:19:52.414.cpp,F:\ZZZzzz\Projets Borland Studio\s2a\LibSerialPort\Arduino.cpp=</Transaction>
+    <Transaction>2015/05/25 03:19:36.449.cpp,F:\ZZZzzz\Projets Borland Studio\s2a\Unit1.cpp=F:\ZZZzzz\Projets Borland Studio\s2a\Detect.cpp</Transaction>
+    <Transaction>2015/05/25 03:19:36.449.h,F:\ZZZzzz\Projets Borland Studio\s2a\Unit1.h=F:\ZZZzzz\Projets Borland Studio\s2a\Detect.h</Transaction>
+    <Transaction>2015/05/25 22:48:47.361.cpp,F:\ZZZzzz\Projets Borland Studio\s2a\Detect.cpp=</Transaction>
+    <Transaction>2015/05/26 00:10:44.969.cpp,F:\ZZZzzz\Projets Borland Studio\s2a_thread\Unit1.cpp=F:\ZZZzzz\Projets Borland Studio\s2a_thread\Detect.cpp</Transaction>
+    <Transaction>2015/05/26 00:10:44.969.h,F:\ZZZzzz\Projets Borland Studio\s2a_thread\Unit1.h=F:\ZZZzzz\Projets Borland Studio\s2a_thread\Detect.h</Transaction>
   </Transactions>
 </BorlandProject>

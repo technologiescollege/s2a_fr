@@ -1,28 +1,35 @@
 ﻿//---------------------------------------------------------------------------
-
+#define WIN32_LEAN_AND_MEAN
 #include <vcl.h>
 #include <stdio.h>
 #include <iostream>
 #include <string>
 #include <fstream>
+
 #pragma hdrstop
 
-#include <windows.h>
+#include <Windows.h>
+#include <setupapi.h>
 
 using namespace std;  //pour les traductions
 #include <tinyxml.h>
 
 #include <IniFiles.hpp> //pour le fichier INI
+#include <registry.hpp>
 
 #include "s2a_scratch2_arduino.h"
+#include "Detect.h"
 
-//---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
+
 TInterfaceS2A *InterfaceS2A;
+
+//---------------------------------------------------------------------------
+
 TIniFile *INI = new TIniFile(ExtractFilePath(Application->ExeName)+ "s2a.ini");
 //listes pour récupérer le contenu du fichier INI
-int port=2;
+int port=0;
 int choix_langue;
 AnsiString locate_scratch2="Scratch 2.exe";
 AnsiString locate_librairie;
@@ -40,7 +47,7 @@ TStringList *Extensions2 = new TStringList;
 void __fastcall TInterfaceS2A::InitINI()
 {
   //écriture dans le fichier INI des variables utiles
-  INI->WriteInteger("port COM", "port", 3);      //port par défaut pour initialiser
+  INI->WriteInteger("port COM", "port", 0);      //port par défaut pour initialiser
   INI->WriteString("locate Scratch2", "locate_scratch2", "Scratch 2.exe"); //chemin par défaut pour initialiser
   INI->WriteInteger("langue", "langue", 0); //dans le fichier label.xml, à la balise <Langues>, cela correspond au n° du rang de la langue
   //dossiers à utiliser pour les documents
@@ -52,11 +59,12 @@ void __fastcall TInterfaceS2A::InitINI()
 __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
 	: TForm(Owner)
 {
+  this->ImgConnect->Picture->LoadFromFile("unconnect.bmp");
   //vérification de l'existence du fichier INI, sinon le recréé
   if (!FileExists(ExtractFilePath(Application->ExeName)+ "s2a.ini"))
 	 InitINI();
   //lecture du fichier INI
-  port=INI->ReadInteger("port COM", "port", 4);
+  port=INI->ReadInteger("port COM", "port", 0);
   choix_langue=INI->ReadInteger("langue", "langue", 0);
   locate_scratch2=INI->ReadString("locate Scratch2", "locate_scratch2", "Scratch 2.exe");
   locate_librairie=INI->ReadString("locate Librairie", "locate_librairie", ExtractFilePath(Application->ExeName) + "bibliotheque\\");
@@ -66,7 +74,7 @@ __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
   //nettoie le champ du TEdit et y place la valeur lue dans le INI
   Edit1->Clear();
   //procédure de contrôle si le fichier INI est mal rempli
-  port=INI->ReadInteger("port COM", "port", 3);
+  port=INI->ReadInteger("port COM", "port", 0);
   Edit1->Text=IntToStr(port);
 
   Extensions1->Add(".sb2");
@@ -90,6 +98,8 @@ __fastcall TInterfaceS2A::TInterfaceS2A(TComponent* Owner)
   langue->Init(InterfaceS2A->Langue1,file.c_str(),(ptrOnClick)&Langue1Click);
   //après l'initialisation des langues, le système pioche la langue précédemment sélectionnée
   langue->Change(choix_langue);
+  TestCarte *ThreadTestArduino=new TestCarte(false);
+  Edit1->Text="1";
 }
 //-------------------------recherche des fichiers sb2 pour les lister dans le menu Fichier--------------------------------------------------
 void __fastcall TInterfaceS2A::SearchEx(AnsiString FilePath, TStringList * Extensions, TStrings * ListeFichiers, int RangMenu)
@@ -264,7 +274,7 @@ INI->WriteString("locate Scratch2", "locate_scratch2", locate_scratch2);
 
 void __fastcall TInterfaceS2A::Edit1KeyPress(TObject *Sender, char &Key)
 {
-  if (Key < '0' || Key >'9')
+if (Key < '0' || Key >'9')
 	{
 	ShowMessage(Popup->Items->Strings[3]);
 	Key=NULL;
@@ -386,3 +396,40 @@ ShellExecute(0, 0, "explorer.exe", (ExtractFilePath(Application->ExeName) + "dri
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TInterfaceS2A::Edit1Change(TObject *Sender)     //évènement récupéré du thread de détection de carte
+{
+if (Edit1->Text == "1")
+	{
+	TRegistry *registre1 = new TRegistry();
+	TRegistry *registre2 = new TRegistry();
+	registre1->RootKey = HKEY_LOCAL_MACHINE;
+	registre2->RootKey = HKEY_LOCAL_MACHINE;
+	if (registre1->OpenKeyReadOnly("SYSTEM\\CurrentControlSet\\Services\\usbser\\Enum"))
+		{
+		if (registre1->ValueExists("0"))
+			{
+			this->ImgConnect->Picture->LoadFromFile("connect.bmp");
+			registre2->OpenKeyReadOnly("HARDWARE\\DEVICEMAP\\SERIALCOMM");
+			port=StrToInt(registre2->ReadString("\\Device\\USBSER000").Delete(1,3));
+			Edit1->Clear();
+			Edit1->Text=IntToStr(port);
+			INI->WriteInteger("port COM", "port", port);
+			}
+		else
+			{
+			this->ImgConnect->Picture->LoadFromFile("unconnect.bmp");
+			port=0;
+			Edit1->Clear();
+			Edit1->Text=IntToStr(port);
+			INI->WriteInteger("port COM", "port", port);
+			ShowMessage(Popup->Items->Strings[5] + "\n" + Popup->Items->Strings[6] + "\n" + Popup->Items->Strings[7]);
+			}
+		}
+	delete registre1;
+	delete registre2;
+	}
+}
+//valable seulement pour 1 carte Arduino, sinon incrémente...
+//HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\usbser\Enum -> 0 -> USB\VID_2341&PID_0042\6493633303735151D061
+//HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\SERIALCOMM -> \Device\USBSER000 -> COMxx
+//---------------------------------------------------------------------------

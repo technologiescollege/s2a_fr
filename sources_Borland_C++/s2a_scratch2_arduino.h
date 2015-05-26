@@ -14,7 +14,7 @@
 #include <FileCtrl.hpp>
 #include <IniFiles.hpp>
 #include <string>
-#include "GestionLangue.h"
+#include <GestionLangue.h>
 //---------------------------------------------------------------------------
 
 class TInterfaceS2A : public TForm
@@ -75,6 +75,7 @@ __published:	// Composants gérés par l'EDI
 	TMenuItem *lchargerlesdrivers1;
 	TMenuItem *N5;
 	TMenuItem *Drivers;
+	TImage *ImgConnect;
 	void __fastcall InitINI();
 	void __fastcall A_proposClick(TObject *Sender);
 	void __fastcall BlocklyArduinoClick(TObject *Sender);
@@ -107,6 +108,7 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall w32Click(TObject *Sender);
 	void __fastcall w64Click(TObject *Sender);
 	void __fastcall DriversClick(TObject *Sender);
+	void __fastcall Edit1Change(TObject *Sender);
 private:	// Déclarations de l'utilisateur
 	TLabel * interLabel ;
 	TButton * interButton ;
