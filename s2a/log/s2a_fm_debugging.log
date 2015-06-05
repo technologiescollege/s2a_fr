@@ -1,6 +1,18 @@
 INFO:root:s2a_fm version 1.5    Copyright(C) 2013-14 Alan Yorinks    All Rights Reserved 
-INFO:root:com port = COM3
-INFO:root:20 Total Pins and 6 Analog Pins Found
-INFO:root:Scratch detected! Ready to rock and roll...
-DEBUG:root:set_servo_position: Pin 9 was not enabled for SERVO operations.
-DEBUG:root:set_servo_position: Pin 9 was not enabled for SERVO operations.
+INFO:root:com port = COM78
+ERROR:root:Could not instantiate PyMata - is your Arduino plugged in?
+Traceback (most recent call last):
+  File "s2a.py", line 73, in s2a_fm
+    firmata = PyMata(com_port)  # pragma: no cover
+  File "S:\Perso\GitHub\technologies\s2a_fr\s2a\Python\lib\site-packages\PyMata\pymata.py", line 114, in __init__
+    self.transport = PyMataSerial(port_id, self.command_deque)
+  File "S:\Perso\GitHub\technologies\s2a_fr\s2a\Python\lib\site-packages\PyMata\pymata_serial.py", line 52, in __init__
+    timeout=int(self.timeout))
+  File "S:\Perso\GitHub\technologies\s2a_fr\s2a\Python\lib\site-packages\serial\serialwin32.py", line 38, in __init__
+    SerialBase.__init__(self, *args, **kwargs)
+  File "S:\Perso\GitHub\technologies\s2a_fr\s2a\Python\lib\site-packages\serial\serialutil.py", line 282, in __init__
+    self.open()
+  File "S:\Perso\GitHub\technologies\s2a_fr\s2a\Python\lib\site-packages\serial\serialwin32.py", line 66, in open
+    raise SerialException("could not open port %r: %r" % (self.portstr, ctypes.WinError()))
+SerialException: could not open port 'COM78': WindowsError(2, 'Le fichier sp\xe9cifi\xe9 est introuvable.')
+DEBUG:root:Exiting s2a_fm
