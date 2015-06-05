@@ -44,6 +44,10 @@ intégrer la fenêtre du script Python dans l'interface
 recréer l'interface dans QtDesigner
 
 
+Version 2.3.1 du 6 juin 2015
+------------------------
+Rajout du lien vers le téléchargement de Scratch2 hors-ligne.
+
 Version 2.3 du 26 mai 2015
 ------------------------
 **Détection automatique de cartes Arduino**, tout en laissant la possibilité de modifier à la main le port COM.
