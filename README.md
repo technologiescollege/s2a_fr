@@ -10,6 +10,8 @@ _Translations for Scratch blocks are also available in Chinese, Dutch, English, 
 
 Des traductions des blocs Scratch sont aussi accessibles en chinois, hollandais, anglais, allemand, coréen, portuguais et espagnol. **Mais les scripts de cette version seront entièrement françisés et portabilisés pour être le plus simple possible**.
 
+**/!\ Avast Antivirus /!\**
+
 **Utilisateurs d’Arduino !** Voudriez-vous configurer et contrôler votre micro-contrôleur Arduino sans devoir écrire une seule ligne de code (_sketch_) Arduino et **avoir en même temps l'accès à une interface graphique** ?
 
 _**Arduino's users!** Would you like to configure and control your Arduino micro-controller without having to write a single Arduino code line and at the same time having access to a graphic interface?_
