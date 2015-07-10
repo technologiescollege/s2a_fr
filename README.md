@@ -46,6 +46,12 @@ intégrer la fenêtre du script Python dans l'interface
 recréer l'interface dans QtDesigner
 
 
+Version 2.3.2 du 10 juillet 2015
+------------------------
+**Argument '-i'** en ligne de commande pour forcer une initialisation des chemins/dossiers avant le lancement de ce panneau de contrôle.
+
+Correction d'un bug d'affichage du nom de l'application en multilingue.
+
 Version 2.3.1 du 6 juin 2015
 ------------------------
 Rajout du lien vers le téléchargement de Scratch2 hors-ligne.
