@@ -16,9 +16,9 @@
   <Labels>
     <Popup type="TComboBox">
       <Items>
-        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.3.2 - juin 2015\Carte Arduino mal connectée ou non reconnue,\vérifiez dans le gestionnaire de périphériques,\accessible depuis le menu 'Outils'.</FR>
-        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.3.2 - june 2015\The Arduino card is not connected,\vérify in the 'Device Management',\shortcut is the 'Tools' menu.</EN>
-		<ES>El fichero 'scratch2.bat'no existe.\El fichero 'scratch2.bat' no existe.\El fichero 's2a_cmd.bat' no existe.\El número de puerto #COM debe ser un entero.\Software creado por Sébastien Canet, diciembre 2014 - v2.3.2 - juno 2015\The Arduino card is not connected,\vérify in the 'Device Management',\shortcut is the 'Tools' menu.</ES>
+        <FR>Le fichier scratch2.bat n'existe pas.\Le fichier scratch2.bat n'existe pas.\Le fichier s2a_cmd.bat n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, décembre 2014 - v2.3.2 - juillet 2015\Carte Arduino mal connectée ou non reconnue,\vérifiez dans le gestionnaire de périphériques,\accessible depuis le menu 'Outils'.</FR>
+        <EN>The file 'scratch2.bat' does not exist.\The file 'scratch2.bat' does not exist.\The file 's2a_cmd.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, december 2014 - v2.3.2 - july 2015\The Arduino card is not connected,\vérify in the 'Device Management',\shortcut is the 'Tools' menu.</EN>
+		<ES>El fichero 'scratch2.bat'no existe.\El fichero 'scratch2.bat' no existe.\El fichero 's2a_cmd.bat' no existe.\El número de puerto #COM debe ser un entero.\Software creado por Sébastien Canet, diciembre 2014 - v2.3.2 - julio 2015\The Arduino card is not connected,\vérify in the 'Device Management',\shortcut is the 'Tools' menu.</ES>
       </Items>
     </Popup>
     <InterfaceS2A type="TFenetrePrincipale">
