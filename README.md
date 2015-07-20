@@ -1,5 +1,12 @@
+_NEW !!!_
+------------------------
+Windows installer :
+- [s2a](https://github.com/technologiescollege/ressources/blob/master/logiciels/S2A_Setup_light.exe?raw=true)
+- [s2a + Scratch2 + Adobe Air](https://github.com/technologiescollege/ressources/blob/master/logiciels/S2A_Setup_AIO.exe?raw=true) 
+
+
 s2a - panneau de contrôle
-====
+------------------------
 International : FR / EN / ES (_thanks to Manuel José Ruiz_)
 
 ![](https://github.com/technologiescollege/s2a_fr/raw/portable/aide/s2a_exe.jpg)
